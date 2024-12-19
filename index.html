@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Clayton Miles Recruitment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="images/logo.png" alt="Clayton Miles Recruitment" />
+            </div>
+            <div class="upload-cv-btn">Upload CV</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    We specialise in connecting you with the best <span id="typed"></span>
+                </h1>
+                <p class="hero-subtitle">And we make it look easy.</p>
+            </div>
+            <div class="hero-animation">
+                <img src="images/animation.gif" alt="Recruitment Animation" class="hero-gif" />
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-text">
+        <h2>Experienced recruiters specialising in various industries</h2>
+    </section>
+    
+    <section class="industries">
+        <div class="industry-item">
+            <div class="industry-icon health"></div>
+            <div class="industry-name">Health &amp; Social Care</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon housing"></div>
+            <div class="industry-name">Housing &amp; Accommodation</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon hospitality"></div>
+            <div class="industry-name">Hospitality</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon engineering"></div>
+            <div class="industry-name">Engineering</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon education"></div>
+            <div class="industry-name">Education</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon construction"></div>
+            <div class="industry-name">Construction</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon admin"></div>
+            <div class="industry-name">Admin &amp; HR</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon marketing"></div>
+            <div class="industry-name">Marketing</div>
+        </div>
+        <div class="industry-item">
+            <div class="industry-icon finance"></div>
+            <div class="industry-name">Finance &amp; Legal</div>
+        </div>
+    </section>
+
+    <!-- New Intro Text Right-Aligned Section -->
+    <section class="intro-text-right">
+        <div class="intro-content">
+            <!-- Left Side: Animation -->
+            <div class="intro-animation">
+                <img src="images/animation2.gif" alt="Exclusive Candidate Database Animation" class="intro-gif" />
+            </div>
+            <!-- Right Side: Text -->
+            <div class="intro-text-content">
+                <h1>Tired of agencies not delivering suitable CVs?</h1>
+                <ul class="intro-bullets">
+                    <li> Access to our exclusive candidate database, reaching unique talent not available by other agencies.</li>
+                    <li> Quickly match to professionals for both permanent and temporary roles. Find our candidates ready to go - who are thoroughly screened and vetted by our experienced team. </li>
+                    <li>Find qualified candidates for positions at every level, from entry level roles to senior positions. </li>
+                    <li>Let us streamline your recruitment process, so you only need to worry about what's important.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typed.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Initialize Typed.js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var typed = new Typed('#typed', {
+                strings: ['Nurses', 'Engineers', 'Teachers', 'Admin Workers', 'Chefs', 'Accountants', 'Care Workers', 'GPs', 'Kitchen Assistants'],
+                typeSpeed: 50,       // Typing speed in milliseconds
+                backSpeed: 30,        // Backspacing speed in milliseconds
+                backDelay: 2000,      // Time before backspacing
+                loop: true,           // Repeat the typing animation
+                smartBackspace: true  // Only backspace what doesn't match the previous string
+            });
+        });
+    </script>
+</body>
+</html>

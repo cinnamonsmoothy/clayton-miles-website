@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: #121212;
+}
+
+/* Header */
+.site-header {
+    background: #121212;
+    box-sizing: border-box;
+    padding: 20px 5%; /* Consistent horizontal padding */
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px; /* Set a consistent max-width */
+    margin: 0 auto;    /* Center the header content */
+}
+
+.logo img {
+    max-height: 55px;
+    width: auto;
+}
+
+.upload-cv-btn {
+    background: #fff;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Animation */
+.upload-cv-btn:hover {
+    background: #121212;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Click Animation */
+.upload-cv-btn:active {
+    transform: scale(0.95);
+}
+
+/* Ripple Effect */
+.upload-cv-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.upload-cv-btn:active::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Hero (banner) */
+.hero {
+    background: #121212;
+    color: #fff;
+    height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 20px 5%; /* Consistent horizontal padding */
+}
+
+.hero-content {
+    max-width: 1500px; /* Same max-width as the header */
+    width: 100%;
+    margin: 0 auto; /* Center the hero content */
+    display: flex; /* Flex to align text and animation side by side */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between text and animation */
+}
+
+.hero-text {
+    max-width: 50%; /* Limit the text to half the width of the banner */
+    width: 100%;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 3.5rem; /* Large text size */
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.hero-subtitle {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.hero-animation {
+    width: 50%; /* Occupy the remaining space */
+    max-width: 600px; /* Limit max width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-animation img {
+    width: 100%; /* Make the GIF responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Intro text section */
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 150px auto 80px auto;
+    padding: 0 20px;
+    color: #121212;
+}
+
+.intro-text h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Industries section */
+.industries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 100px; /* Increased vertical gap */
+    column-gap: 150px; /* Increased horizontal gap */
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+    padding: 0 8%;
+    color: #121212;
+}
+
+.industry-item {
+    text-align: center;
+}
+
+.industry-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 35px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0) saturate(100%) invert(8%) sepia(20%) saturate(2700%) hue-rotate(2deg) brightness(90%) contrast(90%);
+}
+
+/* Health & Social Care */
+.industry-icon.health {
+    background-image: url("images/healthcare.svg");
+}
+
+/* Housing & Accommodation */
+.industry-icon.housing {
+    background-image: url("images/house.svg");
+}
+
+/* Hospitality */
+.industry-icon.hospitality {
+    background-image: url("images/hospitality.svg");
+}
+
+/* Engineering */
+.industry-icon.engineering {
+    background-image: url("images/engineering.svg");
+}
+
+/* Education */
+.industry-icon.education {
+    background-image: url("images/education.svg");
+}
+
+/* Construction */
+.industry-icon.construction {
+    background-image: url("images/construction.svg");
+}
+
+/* Admin & HR */
+.industry-icon.admin {
+    background-image: url("images/admin.svg");
+}
+
+/* Marketing */
+.industry-icon.marketing {
+    background-image: url("images/marketing.svg");
+}
+
+/* Finance & Legal */
+.industry-icon.finance {
+    background-image: url("images/finance.svg");
+}
+
+.industry-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+    max-width: 150px; /* Limit the width of the text to force new lines */
+    margin-left: auto;
+    margin-right: auto; /* Center the text box */
+    word-wrap: break-word; /* Ensure text wraps within the defined width */
+}
+
+/* Typed.js Text Styling */
+#typed {
+    color: #fff; /* Match the hero text color */
+    font-weight: 600;
+}
+
+/* New Intro Text Right-Aligned Section */
+.intro-text-right {
+    padding: 120px 8%; /* Adjusted padding to better align with industries */
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Optional: Light background to distinguish the section */
+}
+
+.intro-text-right .intro-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space between animation and text */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1100px; /* Match industries' max-width */
+    margin: 0 auto; /* Center the content */
+    gap: 40px; /* Space between animation and text */
+}
+
+.intro-text-right .intro-animation {
+    width: 50%; /* Occupy 50% of the container */
+    max-width: 600px; /* Limit max width */
+    display: flex;
+    justify-content: flex-start; /* Align animation to the left within its container */
+}
+
+.intro-text-right .intro-animation img.intro-gif {
+    width: 100%; /* Make the GIF responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.intro-text-right .intro-text-content {
+    width: 45%; /* Slightly less than 50% to account for gaps */
+    text-align: left; /* Left-align the text within the container */
+}
+
+.intro-text-right .intro-text-content h1 {
+    font-size: 2.2rem; /* Adjust font size as needed */
+    margin: 0;
+    color: #121212; /* Text color */
+}
+
+.intro-text-right .intro-text-content p {
+    font-size: 1rem; /* Smaller font size for the paragraph */
+    margin-top: 20px; /* Space between the title and paragraph */
+    color: #121212; /* Text color */
+}
+
+/* Styling for Bullet Points */
+.intro-text-right .intro-text-content ul.intro-bullets {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Indent bullets */
+    margin-top: 20px; /* Space above the list */
+}
+
+.intro-text-right .intro-text-content ul.intro-bullets li {
+    margin-bottom: 20px !important; /* Ensure increased space between bullets */
+}
+
+.intro-text-right .intro-text-content ul.intro-bullets li {
+    margin-bottom: 10px; /* Space between bullets */
+    font-size: 1rem; /* Consistent font size */
+    color: #121212; /* Bullet text color */
+}
+
+/* Optional: Custom Bullet Style */
+.intro-text-right .intro-text-content ul.intro-bullets li::marker {
+    color: #121212; /* Bullet color */
+}
+
+/* Responsive Adjustments for .intro-text-right */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column; /* Stack text and animation vertically */
+        align-items: flex-start;
+    }
+
+    .hero-text {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+
+    .hero-title {
+        font-size: 2.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-animation {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px; /* Space between text and animation */
+    }
+
+    .hero-animation img {
+        width: 100%; /* Ensure GIF scales properly */
+        height: auto;
+    }
+
+    /* Adjust Intro Text Right-Aligned Section on Small Screens */
+    .intro-text-right .intro-content {
+        flex-direction: column;
+        align-items: center; /* Center-align items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .intro-text-right .intro-animation,
+    .intro-text-right .intro-text-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro-text-right .intro-text-content h1 {
+        font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+
+    .intro-text-right .intro-text-content p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+        margin-top: 10px; /* Reduce space between title and paragraph */
+    }
+
+    /* Adjust Bullet Points on Small Screens */
+    .intro-text-right .intro-text-content ul.intro-bullets {
+        padding-left: 0; /* Remove indent */
+        list-style-position: inside; /* Move bullets inside the container */
+    }
+
+    .intro-text-right .intro-text-content ul.intro-bullets li {
+        margin-bottom: 8px; /* Reduce space between bullets */
+    }
+}
