@@ -142,6 +142,13 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            &copy; 2024 Clayton Miles Recruitment | 27 Old Gloucester Street, London, WC1N 3AX
+        </div>
+    </footer>
+
     <!-- Typed.js Library -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Initialize Typed.js and Button Animations -->
@@ -165,7 +172,7 @@
             callBtn.addEventListener('click', function(event) {
                 event.stopPropagation(); // Prevent event from bubbling up to document
                 // Toggle contact info visibility
-                if (contactInfo.classList.contains('show') && contactDetails.textContent === 'Phone: +1 (234) 567-8901') {
+                if (contactInfo.classList.contains('show') && contactDetails.textContent === '+1 (234) 567-8901') {
                     contactInfo.classList.remove('show');
                 } else {
                     contactDetails.textContent = '+1 (234) 567-8901';
@@ -176,7 +183,7 @@
             emailBtn.addEventListener('click', function(event) {
                 event.stopPropagation(); // Prevent event from bubbling up to document
                 // Toggle contact info visibility
-                if (contactInfo.classList.contains('show') && contactDetails.textContent === 'Email: contact@claytonmilesrecruitment.com') {
+                if (contactInfo.classList.contains('show') && contactDetails.textContent === 'contact@claytonmilesrecruitment.com') {
                     contactInfo.classList.remove('show');
                 } else {
                     contactDetails.textContent = 'contact@claytonmilesrecruitment.com';
