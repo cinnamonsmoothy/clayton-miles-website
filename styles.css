@@ -437,6 +437,22 @@ body {
     color: #121212;
 }
 
+/* Footer */
+.site-footer {
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 4%; /* Padding for spacing */
+    font-size: 0.9rem; /* Adjust font size */
+    font-weight: 600; /* Slightly bolder text */
+    line-height: 1.4; /* Improve readability */
+}
+
+.site-footer .footer-content {
+    max-width: 1400px; /* Align with other sections */
+    margin: 0 auto; /* Center align within the container */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 900px) {
     .hero-content {
@@ -512,5 +528,11 @@ body {
 
     .contact-info p {
         font-size: 1.2rem;
+    }
+
+    /* Footer Responsive */
+    .site-footer {
+        padding: 15px 4%; /* Adjust padding for smaller screens */
+        font-size: 0.8rem; /* Slightly smaller font size */
     }
 }
