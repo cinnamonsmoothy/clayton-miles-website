@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
 .site-header {
     background: #121212;
     box-sizing: border-box;
-    padding: 20px 5%; /* Consistent horizontal padding */
+    padding: 20px 4%; /* Reduced horizontal padding from 5% to 4% */
 }
 
 .header-inner {
@@ -80,7 +81,7 @@ body {
     align-items: center; /* Center vertically */
     justify-content: flex-start;
     box-sizing: border-box;
-    padding: 20px 5%; /* Consistent horizontal padding */
+    padding: 20px 4%; /* Reduced horizontal padding from 5% to 4% */
 }
 
 .hero-content {
@@ -114,7 +115,7 @@ body {
 
 .hero-animation {
     width: 50%; /* Occupy the remaining space */
-    max-width: 600px; /* Limit max width */
+    max-width: 800px; /* Increased from 600px to 800px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,9 +149,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     row-gap: 100px; /* Increased vertical gap */
     column-gap: 150px; /* Increased horizontal gap */
-    max-width: 1100px;
+    max-width: 1100px; /* Kept original max-width */
     margin: 0 auto 80px auto;
-    padding: 0 8%;
+    padding: 0 8%; /* Kept original horizontal padding */
     color: #121212;
 }
 
@@ -230,9 +231,9 @@ body {
     font-weight: 600;
 }
 
-/* New Intro Text Right-Aligned Section */
+/* Intro Text Right-Aligned Section */
 .intro-text-right {
-    padding: 120px 8%; /* Adjusted padding to better align with industries */
+    padding: 120px 4%; /* Reduced horizontal padding from 8% to 4% */
     box-sizing: border-box;
     background-color: #f9f9f9; /* Optional: Light background to distinguish the section */
 }
@@ -241,14 +242,14 @@ body {
     display: flex;
     justify-content: space-between; /* Distribute space between animation and text */
     align-items: flex-start; /* Align items to the top */
-    max-width: 1100px; /* Match industries' max-width */
+    max-width: 1400px; /* Increased from 1100px to 1400px */
     margin: 0 auto; /* Center the content */
     gap: 40px; /* Space between animation and text */
 }
 
 .intro-text-right .intro-animation {
     width: 50%; /* Occupy 50% of the container */
-    max-width: 600px; /* Limit max width */
+    max-width: 800px; /* Increased from 600px to 800px */
     display: flex;
     justify-content: flex-start; /* Align animation to the left within its container */
 }
@@ -284,12 +285,8 @@ body {
 }
 
 .intro-text-right .intro-text-content ul.intro-bullets li {
-    margin-bottom: 20px !important; /* Ensure increased space between bullets */
-}
-
-.intro-text-right .intro-text-content ul.intro-bullets li {
-    margin-bottom: 10px; /* Space between bullets */
-    font-size: 1rem; /* Consistent font size */
+    margin-bottom: 15px; /* Increased from 10px to 15px */
+    font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
     color: #121212; /* Bullet text color */
 }
 
@@ -298,7 +295,149 @@ body {
     color: #121212; /* Bullet color */
 }
 
-/* Responsive Adjustments for .intro-text-right */
+/* Intro Text Left-Aligned Section */
+.intro-text-left {
+    padding: 120px 4%; /* Reduced horizontal padding from 8% to 4% */
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Optional: Different background color */
+}
+
+.intro-text-left .intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px; /* Increased from 1100px to 1400px */
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.intro-text-left .intro-text-content {
+    width: 45%;
+    text-align: left;
+}
+
+.intro-text-left .intro-text-content h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #121212;
+}
+
+.intro-text-left .intro-text-content ul.intro-bullets {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.intro-text-left .intro-text-content ul.intro-bullets li {
+    margin-bottom: 15px; /* Increased from 10px to 15px */
+    font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
+    color: #121212;
+}
+
+.intro-text-left .intro-animation {
+    width: 50%;
+    max-width: 800px; /* Increased from 600px to 800px */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.intro-text-left .intro-animation img.intro-gif {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hire Now Section */
+.hire-now {
+    padding: 100px 4%; /* Adjust padding as needed */
+    background-color: #ffffff; /* Optional: white background */
+    text-align: center;
+}
+
+.hire-now-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hire-now h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #121212;
+}
+
+.hire-now p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #121212;
+}
+
+.hire-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.hire-btn {
+    background-color: #121212;
+    color: #fff; /* Ensures the icon is visible */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+}
+
+.hire-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    fill: #ffffff; /* Ensure the icon is white */
+}
+
+.hire-btn:hover {
+    background-color: #333; /* Slightly lighter on hover */
+    transform: scale(1.1);
+}
+
+.hire-btn:active {
+    transform: scale(0.95);
+}
+
+/* Optional: Focus State for Accessibility */
+.hire-btn:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Contact Info Animation */
+.contact-info {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact-info.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #121212;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 900px) {
     .hero-content {
         flex-direction: column; /* Stack text and animation vertically */
@@ -328,35 +467,50 @@ body {
         height: auto;
     }
 
-    /* Adjust Intro Text Right-Aligned Section on Small Screens */
-    .intro-text-right .intro-content {
+    /* Adjust Intro Text Right-Aligned and Left-Aligned Sections on Small Screens */
+    .intro-text-right .intro-content,
+    .intro-text-left .intro-content {
         flex-direction: column;
         align-items: center; /* Center-align items vertically */
         text-align: center; /* Center-align text */
     }
 
     .intro-text-right .intro-animation,
-    .intro-text-right .intro-text-content {
+    .intro-text-right .intro-text-content,
+    .intro-text-left .intro-animation,
+    .intro-text-left .intro-text-content {
         width: 100%;
         padding: 0;
     }
 
-    .intro-text-right .intro-text-content h1 {
+    .intro-text-right .intro-text-content h1,
+    .intro-text-left .intro-text-content h1 {
         font-size: 2rem; /* Reduce font size on smaller screens */
     }
 
-    .intro-text-right .intro-text-content p {
-        font-size: 0.9rem; /* Adjust paragraph font size */
-        margin-top: 10px; /* Reduce space between title and paragraph */
-    }
-
-    /* Adjust Bullet Points on Small Screens */
-    .intro-text-right .intro-text-content ul.intro-bullets {
+    .intro-text-right .intro-text-content ul.intro-bullets,
+    .intro-text-left .intro-text-content ul.intro-bullets {
         padding-left: 0; /* Remove indent */
         list-style-position: inside; /* Move bullets inside the container */
     }
 
-    .intro-text-right .intro-text-content ul.intro-bullets li {
-        margin-bottom: 8px; /* Reduce space between bullets */
+    .intro-text-right .intro-text-content ul.intro-bullets li,
+    .intro-text-left .intro-text-content ul.intro-bullets li {
+        margin-bottom: 12px; /* Increased from 8px to 12px */
+        font-size: 1.2rem; /* Maintain increased font size */
+    }
+
+    /* Hire Now Section Responsive */
+    .hire-buttons {
+        flex-direction: column;
+    }
+
+    .hire-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-info p {
+        font-size: 1.2rem;
     }
 }
