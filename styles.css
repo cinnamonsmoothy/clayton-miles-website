@@ -10,7 +10,6 @@ body {
 /* Header */
 .site-header {
     background: #121212;
-    box-sizing: border-box;
     padding: 20px 4%; /* Reduced horizontal padding from 5% to 4% */
 }
 
@@ -80,7 +79,6 @@ body {
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: flex-start;
-    box-sizing: border-box;
     padding: 20px 4%; /* Reduced horizontal padding from 5% to 4% */
 }
 
@@ -114,8 +112,8 @@ body {
 }
 
 .hero-animation {
-    width: 50%; /* Occupy the remaining space */
-    max-width: 800px; /* Increased from 600px to 800px */
+    width: 50%; /* Reduced from 60% to 50% to make animations smaller */
+    max-width: 800px; /* Kept the max-width */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,36 +231,39 @@ body {
 
 /* Intro Text Right-Aligned Section */
 .intro-text-right {
-    padding: 120px 4%; /* Reduced horizontal padding from 8% to 4% */
-    box-sizing: border-box;
-    background-color: #f9f9f9; /* Optional: Light background to distinguish the section */
+    padding-top: 120px;    /* Maintain top padding */
+    padding-bottom: 60px;  /* Reduced bottom padding */
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #f9f9f9; /* Existing background color */
 }
 
 .intro-text-right .intro-content {
     display: flex;
-    justify-content: space-between; /* Distribute space between animation and text */
-    align-items: flex-start; /* Align items to the top */
-    max-width: 1400px; /* Increased from 1100px to 1400px */
-    margin: 0 auto; /* Center the content */
-    gap: 40px; /* Space between animation and text */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Vertically center the items */
+    max-width: 1400px;       /* Increased from 1100px to 1400px */
+    margin: 0 auto;          /* Center the content */
+    gap: 20px;               /* Space between animation and text */
 }
 
 .intro-text-right .intro-animation {
-    width: 50%; /* Occupy 50% of the container */
-    max-width: 800px; /* Increased from 600px to 800px */
+    width: 50%; /* Width remains the same */
+    max-width: 800px; /* Width remains the same */
     display: flex;
-    justify-content: flex-start; /* Align animation to the left within its container */
+    justify-content: center; /* Center the animation within its container */
 }
 
 .intro-text-right .intro-animation img.intro-gif {
-    width: 100%; /* Make the GIF responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners */
+    width: 80%; /* Reduce size to 80% of the container's width */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Keep rounded corners */
 }
 
 .intro-text-right .intro-text-content {
-    width: 45%; /* Slightly less than 50% to account for gaps */
-    text-align: left; /* Left-align the text within the container */
+    width: 40%; /* Width remains the same */
+    text-align: left; /* Text alignment remains the same */
 }
 
 .intro-text-right .intro-text-content h1 {
@@ -271,48 +272,48 @@ body {
     color: #121212; /* Text color */
 }
 
-.intro-text-right .intro-text-content p {
-    font-size: 1rem; /* Smaller font size for the paragraph */
-    margin-top: 20px; /* Space between the title and paragraph */
-    color: #121212; /* Text color */
+.intro-text-right .intro-text-content p.intro-paragraph {
+    font-size: 1.5rem; /* Increased font size */
+    line-height: 1.6;  /* Improve readability */
+    color: #121212;    /* Text color */
+    margin-top: 20px;  /* Space above the paragraph */
 }
 
-/* Styling for Bullet Points */
-.intro-text-right .intro-text-content ul.intro-bullets {
-    list-style-type: disc; /* Default bullet points */
-    padding-left: 20px; /* Indent bullets */
-    margin-top: 20px; /* Space above the list */
-}
-
-.intro-text-right .intro-text-content ul.intro-bullets li {
-    margin-bottom: 15px; /* Increased from 10px to 15px */
-    font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
-    color: #121212; /* Bullet text color */
-}
-
-/* Optional: Custom Bullet Style */
-.intro-text-right .intro-text-content ul.intro-bullets li::marker {
-    color: #121212; /* Bullet color */
-}
 
 /* Intro Text Left-Aligned Section */
 .intro-text-left {
-    padding: 120px 4%; /* Reduced horizontal padding from 8% to 4% */
-    box-sizing: border-box;
-    background-color: #f0f0f0; /* Optional: Different background color */
+    padding-top: 60px;     /* Reduced top padding */
+    padding-bottom: 120px; /* Maintain bottom padding */
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #f0f0f0; /* Existing background color */
 }
 
 .intro-text-left .intro-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1400px; /* Increased from 1100px to 1400px */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Vertically center the items */
+    max-width: 1400px;       /* Increased from 1100px to 1400px */
     margin: 0 auto;
-    gap: 40px;
+    gap: 20px;               /* Space between text and animation */
+}
+
+.intro-text-left .intro-animation {
+    width: 50%; /* Width remains the same */
+    max-width: 800px; /* Width remains the same */
+    display: flex;
+    justify-content: center; /* Center the animation within its container */
+}
+
+.intro-text-left .intro-animation img.intro-gif {
+    width: 80%; /* Reduce size to 80% of the container's width */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Keep rounded corners */
 }
 
 .intro-text-left .intro-text-content {
-    width: 45%;
+    width: 40%; /* Width remains the same */
     text-align: left;
 }
 
@@ -323,29 +324,29 @@ body {
 }
 
 .intro-text-left .intro-text-content ul.intro-bullets {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 20px;
+    font-size: 1.5rem; /* Match the font size */
+    line-height: 1.6;  /* Match line height for readability */
+    color: #121212;    /* Ensure consistent text color */
+    padding-left: 0;   /* Remove any left padding for alignment */
+    list-style-position: inside; /* Ensure bullets are aligned with text */
 }
 
 .intro-text-left .intro-text-content ul.intro-bullets li {
-    margin-bottom: 15px; /* Increased from 10px to 15px */
+    margin-bottom: 20px; /* Increased from 10px to 15px */
     font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
     color: #121212;
 }
 
-.intro-text-left .intro-animation {
-    width: 50%;
-    max-width: 800px; /* Increased from 600px to 800px */
-    display: flex;
-    justify-content: flex-start;
+.intro-text-left .intro-text-content ul.intro-bullets li::marker {
+    color: #121212; /* Bullet color */
 }
 
-.intro-text-left .intro-animation img.intro-gif {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+
+.intro-text-left .intro-text-content ul.intro-bullets li strong {
+    font-weight: 700; /* Ensure boldness */
+    color: #121212;   /* Keep text color consistent */
 }
+
 
 /* Hire Now Section */
 .hire-now {
@@ -507,7 +508,7 @@ body {
     .intro-text-right .intro-text-content ul.intro-bullets,
     .intro-text-left .intro-text-content ul.intro-bullets {
         padding-left: 0; /* Remove indent */
-        list-style-position: inside; /* Move bullets inside the container */
+        list-style-position: inside; /* Ensure bullets are inside the container */
     }
 
     .intro-text-right .intro-text-content ul.intro-bullets li,
