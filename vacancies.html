@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vacancies - Clayton Miles Recruitment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="images/logo.png" alt="Clayton Miles Recruitment" />
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vacancies.html" class="nav-link">Vacancies</a>
+            </nav>
+            <div class="upload-cv-btn">Upload CV</div>
+        </div>
+    </header>
+    
+    <section class="vacancies-hero">
+        <div class="vacancies-hero-content">
+            <h1>Current Vacancies</h1>
+            <p>Explore our latest opportunities and find your perfect role</p>
+        </div>
+    </section>
+
+    <div class="vacancies-container">
+        <div id="loading" class="loading">Loading vacancies...</div>
+        <div id="vacancies-grid" class="vacancies-grid"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta" id="modal-meta"></div>
+                <div class="modal-section" id="modal-description-section">
+                    <h3>Job Description</h3>
+                    <p id="modal-description"></p>
+                </div>
+                <div class="modal-section" id="modal-requirements-section">
+                    <h3>Essential Requirements</h3>
+                    <ul id="modal-requirements"></ul>
+                </div>
+                <button class="apply-btn" id="apply-btn">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            &copy; 2024 Clayton Miles Recruitment | 27 Old Gloucester Street, London, WC1N 3AX
+        </div>
+    </footer>
+
+    <script src="vacancies.js"></script>
+</body>
+</html>
+

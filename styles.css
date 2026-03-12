@@ -1,0 +1,902 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: #121212;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push footer to bottom */
+.site-footer {
+    margin-top: auto;
+}
+
+/* Header */
+.site-header {
+    background: #121212;
+    padding: 20px 4%; /* Reduced horizontal padding from 5% to 4% */
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px; /* Set a consistent max-width */
+    margin: 0 auto;    /* Center the header content */
+    gap: 40px;
+}
+
+.logo img {
+    max-height: 55px;
+    width: auto;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: opacity 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.upload-cv-btn {
+    background: #fff;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Animation */
+.upload-cv-btn:hover {
+    background: #121212;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Click Animation */
+.upload-cv-btn:active {
+    transform: scale(0.95);
+}
+
+/* Ripple Effect */
+.upload-cv-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.upload-cv-btn:active::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Hero (banner) */
+.hero {
+    background: #121212;
+    color: #fff;
+    height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start;
+    padding: 20px 4%; /* Reduced horizontal padding from 5% to 4% */
+}
+
+.hero-content {
+    max-width: 1500px; /* Same max-width as the header */
+    width: 100%;
+    margin: 0 auto; /* Center the hero content */
+    display: flex; /* Flex to align text and animation side by side */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between text and animation */
+}
+
+.hero-text {
+    max-width: 50%; /* Limit the text to half the width of the banner */
+    width: 100%;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 3.5rem; /* Large text size */
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.hero-subtitle {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.hero-animation {
+    width: 50%; /* Reduced from 60% to 50% to make animations smaller */
+    max-width: 800px; /* Kept the max-width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-animation img {
+    width: 100%; /* Make the GIF responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Intro text section */
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 150px auto 80px auto;
+    padding: 0 20px;
+    color: #121212;
+}
+
+.intro-text h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Industries section */
+.industries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 100px; /* Increased vertical gap */
+    column-gap: 150px; /* Increased horizontal gap */
+    max-width: 1100px; /* Kept original max-width */
+    margin: 0 auto 80px auto;
+    padding: 0 8%; /* Kept original horizontal padding */
+    color: #121212;
+}
+
+.industry-item {
+    text-align: center;
+}
+
+.industry-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 35px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0) saturate(100%) invert(8%) sepia(20%) saturate(2700%) hue-rotate(2deg) brightness(90%) contrast(90%);
+}
+
+/* Health & Social Care */
+.industry-icon.health {
+    background-image: url("images/healthcare.svg");
+}
+
+/* Housing & Accommodation */
+.industry-icon.housing {
+    background-image: url("images/house.svg");
+}
+
+/* Hospitality */
+.industry-icon.hospitality {
+    background-image: url("images/hospitality.svg");
+}
+
+/* Engineering */
+.industry-icon.engineering {
+    background-image: url("images/engineering.svg");
+}
+
+/* Education */
+.industry-icon.education {
+    background-image: url("images/education.svg");
+}
+
+/* Construction */
+.industry-icon.construction {
+    background-image: url("images/construction.svg");
+}
+
+/* Admin & HR */
+.industry-icon.admin {
+    background-image: url("images/admin.svg");
+}
+
+/* Marketing */
+.industry-icon.marketing {
+    background-image: url("images/marketing.svg");
+}
+
+/* Finance & Legal */
+.industry-icon.finance {
+    background-image: url("images/finance.svg");
+}
+
+.industry-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+    max-width: 150px; /* Limit the width of the text to force new lines */
+    margin-left: auto;
+    margin-right: auto; /* Center the text box */
+    word-wrap: break-word; /* Ensure text wraps within the defined width */
+}
+
+/* Typed.js Text Styling */
+#typed {
+    color: #fff; /* Match the hero text color */
+    font-weight: 600;
+}
+
+/* Intro Text Right-Aligned Section */
+.intro-text-right {
+    padding-top: 120px;    /* Maintain top padding */
+    padding-bottom: 60px;  /* Reduced bottom padding */
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #f9f9f9; /* Existing background color */
+}
+
+.intro-text-right .intro-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Vertically center the items */
+    max-width: 1400px;       /* Increased from 1100px to 1400px */
+    margin: 0 auto;          /* Center the content */
+    gap: 20px;               /* Space between animation and text */
+}
+
+.intro-text-right .intro-animation {
+    width: 50%; /* Width remains the same */
+    max-width: 800px; /* Width remains the same */
+    display: flex;
+    justify-content: center; /* Center the animation within its container */
+}
+
+.intro-text-right .intro-animation img.intro-gif {
+    width: 80%; /* Reduce size to 80% of the container's width */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Keep rounded corners */
+}
+
+.intro-text-right .intro-text-content {
+    width: 40%; /* Width remains the same */
+    text-align: left; /* Text alignment remains the same */
+}
+
+.intro-text-right .intro-text-content h1 {
+    font-size: 2.2rem; /* Adjust font size as needed */
+    margin: 0;
+    color: #121212; /* Text color */
+}
+
+.intro-text-right .intro-text-content p.intro-paragraph {
+    font-size: 1.5rem; /* Increased font size */
+    line-height: 1.6;  /* Improve readability */
+    color: #121212;    /* Text color */
+    margin-top: 20px;  /* Space above the paragraph */
+}
+
+
+/* Intro Text Left-Aligned Section */
+.intro-text-left {
+    padding-top: 60px;     /* Reduced top padding */
+    padding-bottom: 120px; /* Maintain bottom padding */
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #f0f0f0; /* Existing background color */
+}
+
+.intro-text-left .intro-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Vertically center the items */
+    max-width: 1400px;       /* Increased from 1100px to 1400px */
+    margin: 0 auto;
+    gap: 20px;               /* Space between text and animation */
+}
+
+.intro-text-left .intro-animation {
+    width: 50%; /* Width remains the same */
+    max-width: 800px; /* Width remains the same */
+    display: flex;
+    justify-content: center; /* Center the animation within its container */
+}
+
+.intro-text-left .intro-animation img.intro-gif {
+    width: 80%; /* Reduce size to 80% of the container's width */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Keep rounded corners */
+}
+
+.intro-text-left .intro-text-content {
+    width: 40%; /* Width remains the same */
+    text-align: left;
+}
+
+.intro-text-left .intro-text-content h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #121212;
+}
+
+.intro-text-left .intro-text-content ul.intro-bullets {
+    font-size: 1.5rem; /* Match the font size */
+    line-height: 1.6;  /* Match line height for readability */
+    color: #121212;    /* Ensure consistent text color */
+    padding-left: 0;   /* Remove any left padding for alignment */
+    list-style-position: inside; /* Ensure bullets are aligned with text */
+}
+
+.intro-text-left .intro-text-content ul.intro-bullets li {
+    margin-bottom: 20px; /* Increased from 10px to 15px */
+    font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
+    color: #121212;
+}
+
+.intro-text-left .intro-text-content ul.intro-bullets li::marker {
+    color: #121212; /* Bullet color */
+}
+
+
+.intro-text-left .intro-text-content ul.intro-bullets li strong {
+    font-weight: 700; /* Ensure boldness */
+    color: #121212;   /* Keep text color consistent */
+}
+
+
+/* Hire Now Section */
+.hire-now {
+    padding: 100px 4%; /* Adjust padding as needed */
+    background-color: #ffffff; /* Optional: white background */
+    text-align: center;
+}
+
+.hire-now-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hire-now h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #121212;
+}
+
+.hire-now p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #121212;
+}
+
+.hire-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.hire-btn {
+    background-color: #121212;
+    color: #fff; /* Ensures the icon is visible */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+}
+
+.hire-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    fill: #ffffff; /* Ensure the icon is white */
+}
+
+.hire-btn:hover {
+    background-color: #333; /* Slightly lighter on hover */
+    transform: scale(1.1);
+}
+
+.hire-btn:active {
+    transform: scale(0.95);
+}
+
+/* Optional: Focus State for Accessibility */
+.hire-btn:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Contact Info Animation */
+.contact-info {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact-info.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #121212;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 4%; /* Padding for spacing */
+    font-size: 0.9rem; /* Adjust font size */
+    font-weight: 600; /* Slightly bolder text */
+    line-height: 1.4; /* Improve readability */
+}
+
+.site-footer .footer-content {
+    max-width: 1400px; /* Align with other sections */
+    margin: 0 auto; /* Center align within the container */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column; /* Stack text and animation vertically */
+        align-items: flex-start;
+    }
+
+    .hero-text {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+
+    .hero-title {
+        font-size: 2.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-animation {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px; /* Space between text and animation */
+    }
+
+    .hero-animation img {
+        width: 100%; /* Ensure GIF scales properly */
+        height: auto;
+    }
+
+    /* Adjust Intro Text Right-Aligned and Left-Aligned Sections on Small Screens */
+    .intro-text-right .intro-content,
+    .intro-text-left .intro-content {
+        flex-direction: column;
+        align-items: center; /* Center-align items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .intro-text-right .intro-animation,
+    .intro-text-right .intro-text-content,
+    .intro-text-left .intro-animation,
+    .intro-text-left .intro-text-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro-text-right .intro-text-content h1,
+    .intro-text-left .intro-text-content h1 {
+        font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+
+    .intro-text-right .intro-text-content ul.intro-bullets,
+    .intro-text-left .intro-text-content ul.intro-bullets {
+        padding-left: 0; /* Remove indent */
+        list-style-position: inside; /* Ensure bullets are inside the container */
+    }
+
+    .intro-text-right .intro-text-content ul.intro-bullets li,
+    .intro-text-left .intro-text-content ul.intro-bullets li {
+        margin-bottom: 12px; /* Increased from 8px to 12px */
+        font-size: 1.2rem; /* Maintain increased font size */
+    }
+
+    /* Hire Now Section Responsive */
+    .hire-buttons {
+        flex-direction: column;
+    }
+
+    .hire-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-info p {
+        font-size: 1.2rem;
+    }
+
+    /* Footer Responsive */
+    .site-footer {
+        padding: 15px 4%; /* Adjust padding for smaller screens */
+        font-size: 0.8rem; /* Slightly smaller font size */
+    }
+
+    /* Vacancies Page Responsive */
+    .vacancies-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+}
+
+/* ========================================
+   VACANCIES PAGE STYLES
+   ======================================== */
+
+/* Vacancies Hero Section */
+.vacancies-hero {
+    background: #121212;
+    color: #fff;
+    padding: 80px 4%;
+    text-align: center;
+}
+
+.vacancies-hero-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.vacancies-hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.vacancies-hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Vacancies Container */
+.vacancies-container {
+    margin: 60px auto;
+    padding: 0 4%;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Vacancies Grid */
+.vacancies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+/* Vacancy Card */
+.vacancy-card {
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vacancy-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #121212, #444);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.vacancy-card:hover {
+    border-color: #121212;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy-card:hover::before {
+    transform: scaleX(1);
+}
+
+.vacancy-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #121212;
+    line-height: 1.3;
+}
+
+.vacancy-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.vacancy-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.vacancy-meta-item svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    opacity: 0.7;
+}
+
+.view-details-btn {
+    background: #121212;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin-top: auto;
+}
+
+.view-details-btn:hover {
+    background: #333;
+    transform: scale(1.02);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #121212;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+/* Modal Header */
+.modal-header {
+    background: #121212;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+}
+
+/* Modal Body scrolls independently */
+.modal-body {
+    background: #fff;
+    padding: 40px;
+    max-height: calc(90vh - 100px);
+    overflow-y: auto;
+}
+
+.modal-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 40px 0 0;
+    line-height: 1.3;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.modal-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.modal-meta-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.modal-meta-item svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.modal-meta-item-content strong {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.modal-meta-item-content span {
+    font-size: 1.1rem;
+    color: #121212;
+    font-weight: 600;
+}
+
+.modal-section {
+    margin-bottom: 30px;
+}
+
+.modal-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #121212;
+}
+
+.modal-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+.modal-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-section ul li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 8px;
+    color: #121212;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Apply Button */
+.apply-btn {
+    background: #121212;
+    color: #fff;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+.apply-btn:hover {
+    background: #333;
+    transform: scale(1.02);
+}
