@@ -18,6 +18,15 @@
                 <a href="vacancies.html" class="nav-link">Vacancies</a>
             </nav>
             <div class="upload-cv-btn">Upload CV</div>
+            <button class="burger" id="burger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile nav drawer -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="vacancies.html" class="mobile-nav-link">Vacancies</a>
+            <a href="#" class="mobile-nav-link">Upload CV</a>
         </div>
     </header>
     
@@ -63,6 +72,15 @@
     </footer>
 
     <script src="vacancies.js"></script>
+    <script>
+        // Burger menu
+        const burger = document.getElementById('burger');
+        const mobileNav = document.getElementById('mobile-nav');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
 

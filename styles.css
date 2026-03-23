@@ -47,6 +47,76 @@ body {
     margin-left: auto;
 }
 
+/* Burger button — hidden on desktop */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+.burger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Burger open state — animate to X */
+.burger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+.burger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile nav drawer */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1a;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.mobile-nav.open {
+    max-height: 300px;
+    padding: 10px 0 20px;
+}
+
+.mobile-nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 4%;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: background 0.2s ease;
+}
+
+.mobile-nav-link:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav-link:hover {
+    background: rgba(255,255,255,0.06);
+}
+
 .nav-link {
     color: #fff;
     text-decoration: none;
@@ -493,22 +563,22 @@ body {
    ======================================== */
 @media (max-width: 900px) {
 
-    /* Header */
-    .header-inner {
-        gap: 15px;
-    }
-
-    .main-nav {
-        gap: 15px;
-    }
-
-    .nav-link {
-        font-size: 0.85rem;
-    }
-
+    /* Header — switch to burger */
+    .main-nav,
     .upload-cv-btn {
-        padding: 8px 14px;
-        font-size: 0.8rem;
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .header-inner {
+        gap: 10px;
     }
 
     /* Hero */
