@@ -1,4 +1,8 @@
 /* General Styles */
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +12,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* Push footer to bottom */
@@ -483,19 +488,46 @@ body {
     margin: 0 auto; /* Center align within the container */
 }
 
-/* Responsive Adjustments */
+/* ========================================
+   RESPONSIVE — TABLET (max 900px)
+   ======================================== */
 @media (max-width: 900px) {
+
+    /* Header */
+    .header-inner {
+        gap: 15px;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .upload-cv-btn {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        padding: 40px 4%;
+    }
+
     .hero-content {
-        flex-direction: column; /* Stack text and animation vertically */
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .hero-text {
-        max-width: 100%; /* Allow full width on smaller screens */
+        max-width: 100%;
     }
 
     .hero-title {
-        font-size: 2.5rem; /* Reduce font size for smaller screens */
+        font-size: 2.5rem;
     }
 
     .hero-subtitle {
@@ -505,20 +537,20 @@ body {
     .hero-animation {
         width: 100%;
         max-width: 100%;
-        margin-top: 20px; /* Space between text and animation */
+        margin-top: 20px;
     }
 
     .hero-animation img {
-        width: 100%; /* Ensure GIF scales properly */
+        width: 100%;
         height: auto;
     }
 
-    /* Adjust Intro Text Right-Aligned and Left-Aligned Sections on Small Screens */
+    /* Intro sections */
     .intro-text-right .intro-content,
     .intro-text-left .intro-content {
         flex-direction: column;
-        align-items: center; /* Center-align items vertically */
-        text-align: center; /* Center-align text */
+        align-items: center;
+        text-align: center;
     }
 
     .intro-text-right .intro-animation,
@@ -531,24 +563,31 @@ body {
 
     .intro-text-right .intro-text-content h1,
     .intro-text-left .intro-text-content h1 {
-        font-size: 2rem; /* Reduce font size on smaller screens */
+        font-size: 2rem;
     }
 
     .intro-text-right .intro-text-content ul.intro-bullets,
     .intro-text-left .intro-text-content ul.intro-bullets {
-        padding-left: 0; /* Remove indent */
-        list-style-position: inside; /* Ensure bullets are inside the container */
+        padding-left: 0;
+        list-style-position: inside;
     }
 
     .intro-text-right .intro-text-content ul.intro-bullets li,
     .intro-text-left .intro-text-content ul.intro-bullets li {
-        margin-bottom: 12px; /* Increased from 8px to 12px */
-        font-size: 1.2rem; /* Maintain increased font size */
+        margin-bottom: 12px;
+        font-size: 1.1rem;
     }
 
-    /* Hire Now Section Responsive */
+    /* Industries */
+    .industries {
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+
+    /* Hire Now */
     .hire-buttons {
         flex-direction: column;
+        align-items: center;
     }
 
     .hire-btn {
@@ -557,19 +596,150 @@ body {
     }
 
     .contact-info p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    /* Footer Responsive */
+    /* Footer */
     .site-footer {
-        padding: 15px 4%; /* Adjust padding for smaller screens */
-        font-size: 0.8rem; /* Slightly smaller font size */
+        padding: 15px 4%;
+        font-size: 0.8rem;
     }
 
-    /* Vacancies Page Responsive */
+    /* Vacancies grid */
     .vacancies-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 15px !important;
+    }
+
+    .vacancies-hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE (max 540px)
+   ======================================== */
+@media (max-width: 540px) {
+
+    /* Header — stack logo + hide nav text, keep upload btn */
+    .header-inner {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .main-nav {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .upload-cv-btn {
+        padding: 7px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 30px 4%;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Intro text */
+    .intro-text {
+        margin: 60px auto 40px auto;
+    }
+
+    .intro-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro-text-right,
+    .intro-text-left {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .intro-text-right .intro-text-content h1,
+    .intro-text-left .intro-text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text-right .intro-text-content p.intro-paragraph,
+    .intro-text-left .intro-text-content ul.intro-bullets li {
+        font-size: 1rem;
+    }
+
+    /* Industries */
+    .industries {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+        padding: 0 4%;
+    }
+
+    /* Hire Now */
+    .hire-now {
+        padding: 60px 4%;
+    }
+
+    .hire-now h2 {
+        font-size: 1.8rem;
+    }
+
+    .hire-now p {
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        padding: 15px;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+
+    /* Vacancies */
+    .vacancies-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .vacancies-hero {
+        padding: 50px 4%;
+    }
+
+    .vacancies-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .vacancies-hero p {
+        font-size: 1rem;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal-header {
+        padding: 20px;
+    }
+
+    .modal-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .modal-body {
+        padding: 20px;
     }
 }
 
