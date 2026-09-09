@@ -5077,3 +5077,111 @@ body {
         grid-column: 1 / -1;
     }
 }
+
+/* Primary hero hiring action */
+.home-page .hero-actions .hero-hire-cta {
+    position: relative;
+    isolation: isolate;
+    min-height: 50px;
+    padding: 13px 46px;
+    overflow: hidden;
+    font-size: 0.88rem;
+    font-weight: 700;
+    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.055);
+}
+
+.home-page .hero-actions .hero-hire-cta::before,
+.home-page .hero-actions .hero-hire-cta::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    pointer-events: none;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.home-page .hero-actions .hero-hire-cta::before {
+    background: conic-gradient(from var(--cta-orbit), transparent 0deg 300deg, rgba(17, 17, 17, 0.16) 312deg, #111111 334deg, transparent 356deg);
+    animation: cta-border-orbit 2.8s linear infinite;
+    transition: opacity 180ms ease;
+}
+
+.home-page .hero-actions .hero-hire-cta::after {
+    background: #111111;
+    opacity: 0;
+    transition: opacity 180ms ease;
+}
+
+.home-page .hero-actions .hero-hire-cta:hover::before {
+    opacity: 0;
+}
+
+.home-page .hero-actions .hero-hire-cta:hover::after {
+    opacity: 1;
+}
+
+.home-page .hero-actions .hero-hire-cta:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.075);
+}
+
+.home-page .hero-actions .hero-hire-cta > span {
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .cta-bolt {
+    position: absolute !important;
+    left: 20px;
+    top: 50%;
+    width: 19px;
+    height: 19px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 19px;
+    color: #4f4f4f;
+    transform: translateY(-50%);
+}
+
+.home-page .cta-bolt svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 180ms ease;
+}
+
+.home-page .hero-hire-cta:hover .cta-bolt {
+    transform: translateY(-50%) scale(1.1) rotate(-4deg);
+}
+
+.home-page .hero-actions .button:hover {
+    transform: none;
+}
+
+@property --cta-orbit {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes cta-border-orbit {
+    to {
+        --cta-orbit: 360deg;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-page .hero-actions .hero-hire-cta::before {
+        animation: none;
+        background: rgba(17, 17, 17, 0.35);
+    }
+}
