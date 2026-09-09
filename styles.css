@@ -3967,6 +3967,11 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.home-page .overview-stats > div {
+    align-items: center;
+    text-align: center;
+}
+
 .home-page .why-layout {
     display: block;
 }
