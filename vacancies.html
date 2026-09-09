@@ -4,45 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vacancies - Clayton Miles Recruitment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+    <script src="site-header.js"></script>
 </head>
-<body>
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="logo">
-                <img src="images/logo.png" alt="Clayton Miles Recruitment" />
-            </div>
-            <nav class="main-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="vacancies.html" class="nav-link">Vacancies</a>
-            </nav>
-            <div class="upload-cv-btn">Upload CV</div>
-            <button class="burger" id="burger" aria-label="Open menu">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </button>
-        </div>
-        <!-- Mobile nav drawer -->
-        <div class="mobile-nav" id="mobile-nav">
-            <a href="index.html" class="mobile-nav-link">Home</a>
-            <a href="vacancies.html" class="mobile-nav-link">Vacancies</a>
-            <a href="#" class="mobile-nav-link">Upload CV</a>
-        </div>
-    </header>
-    
-    <section class="vacancies-hero">
-        <div class="vacancies-hero-content">
-            <h1>Current Vacancies</h1>
-            <p>Explore our latest opportunities and find your perfect role</p>
-        </div>
-    </section>
+<body class="home-page vacancies-page">
+    <site-header></site-header>
 
-    <div class="vacancies-container">
-        <div id="loading" class="loading">Loading vacancies...</div>
-        <div id="vacancies-grid" class="vacancies-grid"></div>
-    </div>
+    <main>
+        <section class="home-hero vacancies-page-hero">
+            <div class="home-container hero-grid">
+                <div class="hero-copy">
+                    <h1><span class="hero-line hero-line-one">Find work that</span><span class="hero-line hero-line-two">moves you forward.</span></h1>
+                    <p class="hero-subtitle-modern">Explore current opportunities across our specialist sectors.</p>
+                    <div class="hero-actions">
+                        <a class="button button-light" href="#vacancy-list">View Vacancies</a>
+                    </div>
+                </div>
+                <div class="hero-art" aria-hidden="true">
+                    <div class="hero-art-frame"><img src="images/animation5.gif" alt="" width="900" height="681" fetchpriority="high"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vacancies-container" id="vacancy-list">
+            <div id="loading" class="loading">Loading vacancies...</div>
+            <div id="vacancies-grid" class="vacancies-grid"></div>
+        </section>
+    </main>
 
     <!-- Modal -->
     <div id="modal-overlay" class="modal-overlay">
@@ -69,20 +60,10 @@
     <!-- Footer Section -->
     <footer class="site-footer">
         <div class="footer-content">
-            &copy; 2024 Clayton Miles Recruitment | 27 Old Gloucester Street, London, WC1N 3AX
+            &copy; 2026 Clayton Miles Recruitment | 27 Old Gloucester Street, London, WC1N 3AX
         </div>
     </footer>
 
     <script src="vacancies.js"></script>
-    <script>
-        // Burger menu
-        const burger = document.getElementById('burger');
-        const mobileNav = document.getElementById('mobile-nav');
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('open');
-            mobileNav.classList.toggle('open');
-        });
-    </script>
 </body>
 </html>
-

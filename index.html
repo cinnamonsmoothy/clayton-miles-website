@@ -1,224 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Clayton Miles Recruitment</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Font Awesome for Icons (Optional: Remove if not used elsewhere) -->
-    <!-- Remove this line if not using Font Awesome elsewhere -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pIVySjdqjAz0e8szKkE6wKXCL+7VkgIBWg0LHGx0J6xFAmWqA1I1+ZxSDsmq9NquPJe6sLNBr6X+HTJV9SIBBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clayton Miles connects UK employers with rigorously screened talent across healthcare, housing, hospitality, engineering, education and more.">
+    <title>Clayton Miles Recruitment | The right people, without the long wait</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="site-header.js"></script>
 </head>
-<body>
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="logo">
-                <img src="images/logo.png" alt="Clayton Miles Recruitment" />
-            </div>
-            <nav class="main-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="vacancies.html" class="nav-link">Vacancies</a>
-            </nav>
-            <div class="upload-cv-btn">Upload CV</div>
-            <button class="burger" id="burger" aria-label="Open menu">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </button>
-        </div>
-        <!-- Mobile nav drawer -->
-        <div class="mobile-nav" id="mobile-nav">
-            <a href="index.html" class="mobile-nav-link">Home</a>
-            <a href="vacancies.html" class="mobile-nav-link">Vacancies</a>
-            <a href="#" class="mobile-nav-link">Upload CV</a>
-        </div>
-    </header>
-    
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    We specialise in connecting you with the best <span id="typed"></span>
-                </h1>
-                <p class="hero-subtitle">And we make it look easy.</p>
-            </div>
-            <div class="hero-animation">
-                <img src="images/animation.gif" alt="Recruitment Animation" class="hero-gif" />
-            </div>
-        </div>
-    </section>
+<body class="home-page">
+    <site-header></site-header>
 
-    <section class="intro-text">
-        <h2>Experienced recruiters specialising in various industries</h2>
-    </section>
-    
-    <section class="industries">
-        <div class="industry-item">
-            <div class="industry-icon health"></div>
-            <div class="industry-name">Health &amp; Social Care</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon housing"></div>
-            <div class="industry-name">Housing &amp; Accommodation</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon hospitality"></div>
-            <div class="industry-name">Hospitality</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon engineering"></div>
-            <div class="industry-name">Engineering</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon education"></div>
-            <div class="industry-name">Education</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon construction"></div>
-            <div class="industry-name">Construction</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon admin"></div>
-            <div class="industry-name">Admin &amp; HR</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon marketing"></div>
-            <div class="industry-name">Marketing</div>
-        </div>
-        <div class="industry-item">
-            <div class="industry-icon finance"></div>
-            <div class="industry-name">Finance &amp; Legal</div>
-        </div>
-    </section>
+    <main>
+        <section class="home-hero">
+            <div class="home-container hero-grid">
+                <div class="hero-copy reveal">
+                    <h1><span class="hero-line hero-line-one">Recruitment agency that</span><span class="hero-line hero-line-two">connects you with the</span><span class="hero-line hero-line-three">best <span class="dynamic-role" id="rotating-role">Nurses</span></span></h1>
+                    <p class="hero-subtitle-modern">And we make it look easy.</p>
+                    <div class="hero-actions">
+                        <button class="button button-light" type="button" data-contact-modal="hire">Hire Staff</button>
+                        <button class="button hero-button-secondary" type="button" data-contact-modal="find">Find Work</button>
+                    </div>
+                </div>
+                <div class="hero-art reveal" aria-hidden="true">
+                    <div class="hero-art-frame">
+                        <img src="images/animation.gif" alt="" width="1440" height="810" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Intro Text Right-Aligned Section -->
-    <section class="intro-text-right">
-        <div class="intro-content">
-            <!-- Left Side: Animation -->
-            <div class="intro-animation">
-                <img src="images/animation5.gif" alt="Exclusive Candidate Database Animation" class="intro-gif" />
+        <section class="client-proof-section" id="client-proof" aria-label="Client trust">
+            <div class="home-container client-proof reveal">
+                <p>Trusted by 30+ clients worldwide.</p>
+                <div class="testimonial-marquee" aria-label="Sample client testimonials">
+                    <div class="testimonial-track">
+                        <div class="testimonial-group">
+                            <article class="testimonial-card"><p class="testimonial-text">“Three strong CVs in two days. We hired from the first shortlist.”</p><p class="testimonial-sector">Head of Care at a national care provider</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“They understood the role immediately and kept the process moving.”</p><p class="testimonial-sector">Operations Director at a supported housing provider</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“Every candidate was relevant, prepared and genuinely interested.”</p><p class="testimonial-sector">HR Manager at a professional services firm</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“Clear communication, quick turnaround and no wasted interviews.”</p><p class="testimonial-sector">General Manager at a hospitality group</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“They found the technician we had struggled to reach ourselves.”</p><p class="testimonial-sector">Aftersales Manager at an automotive retailer</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“A straightforward service that delivered when the vacancy became urgent.”</p><p class="testimonial-sector">Head of Transport at a logistics operator</p></article>
+                        </div>
+                        <div class="testimonial-group" aria-hidden="true">
+                            <article class="testimonial-card"><p class="testimonial-text">“Three strong CVs in two days. We hired from the first shortlist.”</p><p class="testimonial-sector">Head of Care at a national care provider</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“They understood the role immediately and kept the process moving.”</p><p class="testimonial-sector">Operations Director at a supported housing provider</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“Every candidate was relevant, prepared and genuinely interested.”</p><p class="testimonial-sector">HR Manager at a professional services firm</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“Clear communication, quick turnaround and no wasted interviews.”</p><p class="testimonial-sector">General Manager at a hospitality group</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“They found the technician we had struggled to reach ourselves.”</p><p class="testimonial-sector">Aftersales Manager at an automotive retailer</p></article>
+                            <article class="testimonial-card"><p class="testimonial-text">“A straightforward service that delivered when the vacancy became urgent.”</p><p class="testimonial-sector">Head of Transport at a logistics operator</p></article>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Right Side: Text -->
-            <div class="intro-text-content">
-                <h1>Find talent, just like that!</h1>
-                <p class="intro-paragraph">
-                    Our expert team understands your unique candidate needs, ensuring that every CV we present aligns with your company's vision. For many of our roles we send CV’s within <strong>24 to 48 hours!</strong>
-                </p>
-                <!-- Removed the unordered list (ul) -->
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Intro Text Left-Aligned Section -->
-    <section class="intro-text-left">
-        <div class="intro-content">
-            <!-- Left Side: Text -->
-            <div class="intro-text-content">
-                <h1>Why choose us?</h1>
-<ul class="intro-bullets">
-    <li>We provide only the most <strong>rigorously screened</strong> candidates because we know avoiding a single bad hire can make a big difference.</li>
-    <li>We will offer a <strong>free replacement</strong> in the unlikely event of a candidate leaving within the rebate period.</li>
-    <li>You can try our services for free (you only pay after finalising a placement!).</li>
-</ul>
+        <section class="home-section service-routes-section" id="expertise">
+            <div class="home-container">
+                <div class="section-heading reveal">
+                    <span class="section-pill">Our services</span>
+                    <h2>How can we help?</h2>
+                    <p>Whether you are building a team or planning your next move, start with the route that fits you.</p>
+                </div>
+                <div class="service-routes-grid">
+                    <article class="service-route-card reveal">
+                        <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5h16v11H4zM9 7.5V5h6v2.5M4 12h16"/></svg></span>
+                        <h3>Hire staff</h3>
+                        <p>Tell us who you need. We will search, screen and present relevant candidates who fit the brief.</p>
+                        <button class="route-action" type="button" data-contact-modal="hire">Hire Staff <span aria-hidden="true">→</span></button>
+                    </article>
+                    <article class="service-route-card reveal">
+                        <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 19c.5-4 2.7-6 6.5-6 2.1 0 3.8.6 4.9 1.8M17 14l4 4M21 14l-4 4"/></svg></span>
+                        <h3>Find work</h3>
+                        <p>Explore current vacancies across our specialist sectors and find a role that suits your experience.</p>
+                        <button class="route-action" type="button" data-contact-modal="find">Find Work <span aria-hidden="true">→</span></button>
+                    </article>
+                </div>
             </div>
-            <!-- Right Side: Animation -->
-            <div class="intro-animation">
-                <img src="images/animation4.gif" alt="Specialized Recruitment Animation" class="intro-gif" />
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Hire Now Section -->
-    <section class="hire-now">
-        <div class="hire-now-content">
-            <h2>Hire Now</h2>
-            <p>Contact our friendly team and we can assist you in finding the right talent.</p>
-            <div class="hire-buttons">
-                <button class="hire-btn" id="call-btn" aria-label="Call Us">
-                    <!-- Inline SVG for Phone Icon -->
-                    <svg class="hire-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.73.59 1 1 0 011 1v3.5a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.73 1 1 0 01-.21 1.11l-2.2 2.2z"/>
-                    </svg>
-                </button>
-                <button class="hire-btn" id="email-btn" aria-label="Email Us">
-                    <!-- Inline SVG for Email Icon -->
-                    <svg class="hire-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.4 4.25L12 12.5 5.4 8.25a1 1 0 011.2-1.6l5.4 3.75 5.4-3.75a1 1 0 011.2 1.6z"/>
-                    </svg>
-                </button>
+        <section class="home-section agency-overview-section" id="process">
+            <div class="home-container overview-layout">
+                <div class="section-heading reveal">
+                    <span class="section-pill">Clayton Miles recruitment</span>
+                    <h2>A recruitment agency built to find your next candidate within 48 hours.</h2>
+                    <p>We are not a job board. We take time to understand the role, speak with candidates and create a focused shortlist. For many vacancies, suitable CVs can be with you within 24–48 hours.</p>
+                </div>
+                <div class="overview-stats reveal">
+                    <div><strong>95%+</strong><span>fulfilment rate</span></div>
+                    <div><strong>24–48 hrs</strong><span>candidate turnaround</span></div>
+                    <div><strong>30+</strong><span>clients worldwide</span></div>
+                </div>
             </div>
-            <!-- Hidden contact info -->
-            <div class="contact-info" id="contact-info">
-                <p id="contact-details"></p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer Section -->
+        <section class="home-section why-section" id="why-us">
+            <div class="home-container why-layout">
+                <div class="section-heading reveal">
+                    <span class="section-pill">Why Clayton Miles</span>
+                    <h2>Built around better hiring.</h2>
+                    <p>Recruitment should reduce pressure, not add to it. Our service is designed to keep the process focused and straightforward.</p>
+                </div>
+                <div class="why-content-grid">
+                    <div class="benefit-list">
+                        <article class="benefit-card reveal"><span>01</span><div><h3>Rigorously screened</h3><p>Only relevant, carefully considered candidates make your shortlist.</p></div></article>
+                        <article class="benefit-card reveal"><span>02</span><div><h3>Free replacement</h3><p>Extra reassurance if a candidate leaves within the agreed rebate period.</p></div></article>
+                        <article class="benefit-card reveal"><span>03</span><div><h3>Pay after placement</h3><p>Explore our service without an upfront fee; payment follows a successful hire.</p></div></article>
+                    </div>
+                    <div class="why-art reveal" aria-hidden="true"><img src="images/animation5.gif" alt="" width="900" height="681" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section popular-services-section">
+            <div class="home-container">
+                <div class="section-heading reveal">
+                    <span class="section-pill">Popular services</span>
+                    <h2>What clients hire us for.</h2>
+                    <p>Practical recruitment support for immediate vacancies and long-term team growth.</p>
+                </div>
+                <div class="popular-services-grid">
+                    <article class="popular-service-card reveal"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m13 2-8 12h6l-1 8 8-12h-6z"/></svg></span><h3>Urgent vacancies</h3><p>A focused search when an important position needs filling quickly.</p></article>
+                    <article class="popular-service-card reveal"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21c.6-5 2.9-7.5 7-7.5s6.4 2.5 7 7.5M17 5l1.5 1.5L22 3"/></svg></span><h3>Permanent hires</h3><p>Carefully matched candidates for lasting additions to your organisation.</p></article>
+                    <article class="popular-service-card reveal"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4h12v16H6zM9 8h6M9 12h6M9 16h3M4 7H2v13h12"/></svg></span><h3>Temporary hires</h3><p>Flexible temporary staff to cover demand, absence or short-term projects.</p></article>
+                    <article class="popular-service-card reveal"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5c0 4.8 2.5 8.1 7.5 10 5-1.9 7.5-5.2 7.5-10V6zM8.5 12l2.2 2.2 4.8-5"/></svg></span><h3>Candidate screening</h3><p>Initial conversations and checks completed before candidates reach you.</p></article>
+                    <article class="popular-service-card reveal"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5M18.5 9A7 7 0 0 0 6 7M5.5 15A7 7 0 0 0 18 17"/></svg></span><h3>Replacement support</h3><p>A free replacement within the agreed rebate period if a hire leaves.</p></article>
+                    <article class="popular-service-card reveal"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M2.5 20c.4-4 2.2-6 5.5-6s5.1 2 5.5 6M14 14c3.8-.4 6.2 1.6 6.8 5"/></svg></span><h3>Multi-role hiring</h3><p>One recruitment partner supporting several vacancies across your team.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section sectors-section" id="sectors">
+            <div class="home-container">
+                <div class="section-heading reveal">
+                    <span class="section-pill">Sectors</span>
+                    <h2>Sectors we serve.</h2>
+                    <p>Specialist recruitment knowledge across the industries that keep organisations moving.</p>
+                </div>
+                <div class="expertise-grid">
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Health &amp; Social Care"><span class="sector-icon"><img src="images/healthcare.svg" alt="" width="40" height="40"></span><span class="sector-label">Health &amp; Social Care</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Housing &amp; Accommodation"><span class="sector-icon"><img src="images/house.svg" alt="" width="40" height="40"></span><span class="sector-label">Housing &amp; Accommodation</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Hospitality"><span class="sector-icon"><img src="images/hospitality.svg" alt="" width="40" height="40"></span><span class="sector-label">Hospitality</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Engineering"><span class="sector-icon"><img src="images/engineering.svg" alt="" width="40" height="40"></span><span class="sector-label">Engineering</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Education"><span class="sector-icon"><img src="images/education.svg" alt="" width="40" height="40"></span><span class="sector-label">Education</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Logistics &amp; Transport"><span class="sector-icon"><img src="images/transport.svg" alt="" width="40" height="40"></span><span class="sector-label">Logistics &amp; Transport</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Admin &amp; HR"><span class="sector-icon"><img src="images/admin.svg" alt="" width="40" height="40"></span><span class="sector-label">Admin &amp; HR</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Automotive"><span class="sector-icon"><img src="images/automotive.svg" alt="" width="40" height="40"></span><span class="sector-label">Automotive</span></button>
+                    <button class="sector-option reveal" type="button" data-contact-modal="hire" data-sector="Finance &amp; Legal"><span class="sector-icon"><img src="images/finance.svg" alt="" width="40" height="40"></span><span class="sector-label">Finance &amp; Legal</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section faq-section" id="faq">
+            <div class="home-container faq-layout">
+                <div class="section-heading reveal">
+                    <span class="section-pill">FAQ</span>
+                    <h2>Everything you need to know.</h2>
+                    <p>Straight answers about working with Clayton Miles.</p>
+                </div>
+                <div class="faq-list reveal">
+                    <details>
+                        <summary>How quickly can you send candidate CVs?<span aria-hidden="true"></span></summary>
+                        <p>For many roles, we can send suitable CVs within 24–48 hours. Timing can vary depending on the role, location and requirements.</p>
+                    </details>
+                    <details>
+                        <summary>Which industries do you recruit for?<span aria-hidden="true"></span></summary>
+                        <p>We recruit across health and social care, housing, hospitality, logistics and transport, automotive, engineering, education, admin and HR, finance and legal.</p>
+                    </details>
+                    <details>
+                        <summary>When do we pay for your service?<span aria-hidden="true"></span></summary>
+                        <p>There is no upfront recruitment fee. Payment follows once you have finalised a successful placement.</p>
+                    </details>
+                    <details>
+                        <summary>What happens if a candidate leaves?<span aria-hidden="true"></span></summary>
+                        <p>We offer a free replacement if a candidate leaves within the agreed rebate period.</p>
+                    </details>
+                    <details>
+                        <summary>How do we start a search?<span aria-hidden="true"></span></summary>
+                        <p>Send us a message on WhatsApp or email the team with the role, location and requirements. We will get back to you to discuss the brief.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section contact-section">
+            <div class="home-container contact-panel reveal">
+                <span class="section-pill">Talk to our team</span>
+                <h2>Ready to find the right person?</h2>
+                <p>Tell us what you need and our friendly team will help you take the next step.</p>
+                <div class="contact-actions">
+                    <button class="button button-dark" type="button" data-contact-modal="hire">Hire Staff</button>
+                    <button class="button button-outline" type="button" data-contact-modal="find">Find Work</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="contact-modal" id="contact-modal" hidden>
+        <div class="contact-modal-backdrop" data-modal-close></div>
+        <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title" aria-describedby="contact-modal-description">
+            <button class="contact-modal-close" type="button" aria-label="Close contact options" data-modal-close><span aria-hidden="true">×</span></button>
+            <span class="modal-response-pill"><span aria-hidden="true"></span>We reply within 2 hours</span>
+            <h2 id="contact-modal-title">Let’s find your next hire.</h2>
+            <p id="contact-modal-description">Tell us about the person you need and we’ll help you start a focused search.</p>
+            <div class="contact-modal-actions">
+                <a class="modal-action modal-action-primary" id="modal-whatsapp" href="https://wa.me/447355701322" target="_blank" rel="noopener noreferrer"><span><small>Message us</small>WhatsApp</span><span aria-hidden="true">↗</span></a>
+                <a class="modal-action" id="modal-email" href="mailto:zara@claytonmiles.cc"><span><small>Email us</small>zara@claytonmiles.cc</span><span aria-hidden="true">→</span></a>
+                <a class="modal-action" href="tel:+447355701322"><span><small>Call us</small>07355 701322</span><span aria-hidden="true">→</span></a>
+            </div>
+            <a class="modal-vacancies-link" id="modal-vacancies-link" href="vacancies.html" hidden>Or browse current vacancies <span aria-hidden="true">→</span></a>
+        </section>
+    </div>
+
     <footer class="site-footer">
-        <div class="footer-content">
-            &copy; 2024 Clayton Miles Recruitment | 27 Old Gloucester Street, London, WC1N 3AX
+        <div class="home-container footer-grid">
+            <div class="footer-brand"><img src="images/logo.png" alt="Clayton Miles Recruitment" width="292" height="87"><p>Specialist recruitment, thoughtfully matched.</p></div>
+            <div class="footer-column"><h2>Explore</h2><a href="#expertise">Services</a><a href="#process">Our approach</a><a href="#faq">FAQs</a><a href="vacancies.html">Vacancies</a></div>
+            <div class="footer-column"><h2>Contact</h2><a href="tel:+447355701322">07355 701322</a><a href="mailto:zara@claytonmiles.cc">zara@claytonmiles.cc</a><span>27 Old Gloucester Street<br>London, WC1N 3AX</span></div>
         </div>
+        <div class="home-container footer-bottom"><span>© 2026 Clayton Miles Recruitment</span><span>Recruitment made refreshingly simple.</span></div>
     </footer>
 
-    <!-- Typed.js Library -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- Initialize Typed.js and Button Animations -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var typed = new Typed('#typed', {
-                strings: ['Nurses', 'Engineers', 'Teachers', 'Admin Workers', 'Chefs', 'Accountants', 'Care Workers', 'GPs', 'Kitchen Assistants'],
-                typeSpeed: 50,       // Typing speed in milliseconds
-                backSpeed: 30,        // Backspacing speed in milliseconds
-                backDelay: 2000,      // Time before backspacing
-                loop: true,           // Repeat the typing animation
-                smartBackspace: true  // Only backspace what doesn't match the previous string
-            });
-
-            // Handle Hire Now buttons
-            var callBtn = document.getElementById('call-btn');
-            var emailBtn = document.getElementById('email-btn');
-            var contactInfo = document.getElementById('contact-info');
-            var contactDetails = document.getElementById('contact-details');
-
-            callBtn.addEventListener('click', function(event) {
-                event.stopPropagation(); // Prevent event from bubbling up to document
-                // Toggle contact info visibility
-                if (contactInfo.classList.contains('show') && contactDetails.textContent === '07355 701322') {
-                    contactInfo.classList.remove('show');
-                } else {
-                    contactDetails.textContent = '07355 701322';
-                    contactInfo.classList.add('show');
-                }
-            });
-
-            emailBtn.addEventListener('click', function(event) {
-                event.stopPropagation(); // Prevent event from bubbling up to document
-                // Toggle contact info visibility
-                if (contactInfo.classList.contains('show') && contactDetails.textContent === 'contact@claytonmilesrecruitment.com') {
-                    contactInfo.classList.remove('show');
-                } else {
-                    contactDetails.textContent = 'zara@claytonmiles.cc';
-                    contactInfo.classList.add('show');
-                }
-            });
-
-            // Hide contact info when clicking outside the buttons
-            document.addEventListener('click', function(event) {
-                if (!callBtn.contains(event.target) && !emailBtn.contains(event.target) && !contactInfo.contains(event.target)) {
-                    contactInfo.classList.remove('show');
-                }
-            });
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+        window.addEventListener('pageshow', () => {
+            const navigation = performance.getEntriesByType('navigation')[0];
+            const isReload = navigation && navigation.type === 'reload';
+            if (isReload && window.location.hash) {
+                history.replaceState(null, '', window.location.pathname + window.location.search);
+            }
+            if (isReload || !window.location.hash) window.scrollTo(0, 0);
         });
 
-        // Burger menu
-        const burger = document.getElementById('burger');
-        const mobileNav = document.getElementById('mobile-nav');
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('open');
-            mobileNav.classList.toggle('open');
+        const rotatingRole = document.getElementById('rotating-role');
+        const contactModal = document.getElementById('contact-modal');
+        const contactDialog = contactModal.querySelector('.contact-dialog');
+        const modalTitle = document.getElementById('contact-modal-title');
+        const modalDescription = document.getElementById('contact-modal-description');
+        const modalWhatsApp = document.getElementById('modal-whatsapp');
+        const modalEmail = document.getElementById('modal-email');
+        const modalVacancies = document.getElementById('modal-vacancies-link');
+        let modalTrigger = null;
+        const roles = ['Nurses', 'Engineers', 'Teachers', 'Care Workers', 'Chefs', 'Accountants', 'HR teams', 'Marketing talent'];
+        let roleIndex = 0;
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            window.setInterval(() => {
+                rotatingRole.classList.add('is-changing');
+                window.setTimeout(() => {
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    rotatingRole.textContent = roles[roleIndex];
+                    rotatingRole.classList.remove('is-changing');
+                }, 240);
+            }, 2400);
+        }
+
+        function openContactModal(trigger) {
+            const isCandidate = trigger.dataset.contactModal === 'find';
+            const sector = trigger.dataset.sector || '';
+            const hireSubject = sector ? `${sector} Recruitment Enquiry` : 'Employer Recruitment Enquiry';
+            const hireMessage = sector
+                ? `Hi Clayton Miles, I’d like help hiring within ${sector}.`
+                : 'Hi Clayton Miles, I’d like help hiring for a role.';
+            const candidateMessage = 'Hi Clayton Miles, I’m looking for my next role and would like to speak with your team.';
+
+            modalTrigger = trigger;
+            modalTitle.textContent = isCandidate ? 'Let’s find your next role.' : (sector ? `Hire in ${sector}.` : 'Let’s find your next hire.');
+            modalDescription.textContent = isCandidate
+                ? 'Speak with our team about your experience, or browse the roles currently available.'
+                : 'Tell us about the person you need and we’ll help you start a focused search.';
+            modalWhatsApp.href = `https://wa.me/447355701322?text=${encodeURIComponent(isCandidate ? candidateMessage : hireMessage)}`;
+            modalEmail.href = `mailto:zara@claytonmiles.cc?subject=${encodeURIComponent(isCandidate ? 'Candidate Enquiry' : hireSubject)}`;
+            modalVacancies.hidden = !isCandidate;
+            contactModal.hidden = false;
+            document.body.classList.add('modal-open');
+            contactModal.getBoundingClientRect();
+            contactModal.classList.add('is-open');
+            contactModal.querySelector('.contact-modal-close').focus({ preventScroll: true });
+        }
+
+        function closeContactModal() {
+            if (contactModal.hidden) return;
+            contactModal.classList.remove('is-open');
+            document.body.classList.remove('modal-open');
+            window.setTimeout(() => {
+                contactModal.hidden = true;
+                if (modalTrigger) modalTrigger.focus();
+            }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 220);
+        }
+
+        document.querySelectorAll('[data-contact-modal]').forEach((trigger) => {
+            trigger.addEventListener('click', () => openContactModal(trigger));
         });
+        contactModal.querySelectorAll('[data-modal-close]').forEach((control) => control.addEventListener('click', closeContactModal));
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeContactModal();
+            }
+            if (event.key === 'Tab' && !contactModal.hidden) {
+                const focusable = [...contactDialog.querySelectorAll('a:not([hidden]), button:not([disabled])')];
+                const first = focusable[0];
+                const last = focusable[focusable.length - 1];
+                if (event.shiftKey && document.activeElement === first) {
+                    event.preventDefault();
+                    last.focus();
+                } else if (!event.shiftKey && document.activeElement === last) {
+                    event.preventDefault();
+                    first.focus();
+                }
+            }
+        });
+
+        if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('reveal-ready');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    entry.target.classList.toggle('is-visible', entry.isIntersecting);
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+        }
     </script>
 </body>
 </html>
