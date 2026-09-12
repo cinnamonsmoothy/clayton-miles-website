@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Clayton Miles Recruitment">
+  <rect width="96" height="96" fill="#ffffff"/>
+  <circle cx="31" cy="25" r="7" fill="#111111"/>
+  <path d="M20 43c0-8 5-13 11-13s11 5 11 13H20Z" fill="#111111"/>
+  <path d="M31 47v13h25" fill="none" stroke="#111111" stroke-width="7" stroke-linejoin="miter"/>
+  <circle cx="66" cy="61" r="7" fill="#111111"/>
+  <path d="M55 79c0-8 5-13 11-13s11 5 11 13H55Z" fill="#111111"/>
+</svg>
