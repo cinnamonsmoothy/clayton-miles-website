@@ -7621,8 +7621,8 @@ body {
 }
 
 .home-page.art-gallery-page .art-line-art img {
-    width: min(100%, 560px);
-    max-height: 760px;
+    width: min(108%, 630px);
+    max-height: 840px;
     object-fit: contain;
     transform: none;
 }
