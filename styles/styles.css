@@ -7614,6 +7614,22 @@ body {
     transform: translateX(1%);
 }
 
+/* Art & Galleries landing page: keep the supplied portrait line art composed cleanly. */
+.home-page.art-gallery-page .art-line-art img {
+    width: min(100%, 560px);
+    max-height: 760px;
+    object-fit: contain;
+    transform: none;
+}
+
+.home-page.art-gallery-page .art-proof-title {
+    margin: 0 0 18px;
+    color: var(--hgv-ink);
+    font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+    line-height: 1.18;
+    letter-spacing: -0.04em;
+}
+
 .home-page.logistics-page .logistics-process-section {
     background: #111111;
     color: #ffffff;
