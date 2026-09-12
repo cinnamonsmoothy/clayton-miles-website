@@ -266,47 +266,47 @@ body {
 
 /* Health & Social Care */
 .industry-icon.health {
-    background-image: url("images/healthcare.svg");
+    background-image: url("../images/healthcare.svg");
 }
 
 /* Housing & Accommodation */
 .industry-icon.housing {
-    background-image: url("images/house.svg");
+    background-image: url("../images/house.svg");
 }
 
 /* Hospitality */
 .industry-icon.hospitality {
-    background-image: url("images/hospitality.svg");
+    background-image: url("../images/hospitality.svg");
 }
 
 /* Engineering */
 .industry-icon.engineering {
-    background-image: url("images/engineering.svg");
+    background-image: url("../images/engineering.svg");
 }
 
 /* Education */
 .industry-icon.education {
-    background-image: url("images/education.svg");
+    background-image: url("../images/education.svg");
 }
 
 /* Construction */
 .industry-icon.construction {
-    background-image: url("images/construction.svg");
+    background-image: url("../images/construction.svg");
 }
 
 /* Admin & HR */
 .industry-icon.admin {
-    background-image: url("images/admin.svg");
+    background-image: url("../images/admin.svg");
 }
 
 /* Marketing */
 .industry-icon.marketing {
-    background-image: url("images/marketing.svg");
+    background-image: url("../images/marketing.svg");
 }
 
 /* Finance & Legal */
 .industry-icon.finance {
-    background-image: url("images/finance.svg");
+    background-image: url("../images/finance.svg");
 }
 
 .industry-name {
