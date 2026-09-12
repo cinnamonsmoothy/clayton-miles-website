@@ -7615,6 +7615,11 @@ body {
 }
 
 /* Art & Galleries landing page: keep the supplied portrait line art composed cleanly. */
+.home-page.art-gallery-page .art-line-art {
+    padding-top: 44px;
+    box-sizing: border-box;
+}
+
 .home-page.art-gallery-page .art-line-art img {
     width: min(100%, 560px);
     max-height: 760px;
@@ -7641,6 +7646,12 @@ body {
 @media (max-width: 1000px) {
     .home-page.art-gallery-page .art-role-copy {
         min-height: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-page.art-gallery-page .art-line-art {
+        padding-top: 28px;
     }
 }
 
