@@ -35,7 +35,7 @@ class ClaytonMilesFooter extends HTMLElement {
                         <a href="${sectorHref('Adult Social Care & Care Homes')}">Adult social care</a>
                         <a href="${sectorHref('Hospitality')}">Hospitality</a>
                         <a href="${sectorHref('Engineering')}">Engineering</a>
-                        <a href="logistics-transport-recruitment.html">Logistics & transport</a>
+                        <a href="logistics-transport-recruitment">Logistics & transport</a>
                         <a href="admin-hr-recruitment.html">Admin & HR</a>
                         <a href="${sectorHref('Automotive')}">Automotive</a>
                         <a href="${sectorHref('Art & Galleries')}">Art & galleries</a>

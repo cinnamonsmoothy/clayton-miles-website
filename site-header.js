@@ -37,7 +37,7 @@ class ClaytonMilesHeader extends HTMLElement {
             { name: 'Adult Social Care & Care Homes', roles: ['Care Home Manager', 'Deputy Care Home Manager', 'Registered Manager', 'Nursing Home Manager', 'Care Assistant', 'Senior Care Assistant', 'Support Worker', 'Care Coordinator', 'Domiciliary Care Manager', 'Live-in Carer', 'Complex Care Support Worker', 'Activities Coordinator'] },
             { name: 'Hospitality', roles: ['Chef'] },
             { name: 'Engineering', roles: ['Maintenance Engineer'] },
-            { name: 'Logistics & Transport', page: 'logistics-transport-recruitment.html', roles: ['HGV Driver', 'Class 1 HGV Driver', 'Class 2 HGV Driver', 'Delivery Driver', 'Warehouse Operative', 'Picker & Packer', 'Forklift Driver', 'Warehouse Supervisor', 'Warehouse Manager', 'Transport Planner', 'Logistics Coordinator', 'Fleet Manager'] },
+            { name: 'Logistics & Transport', page: 'logistics-transport-recruitment', roles: ['HGV Driver', 'Class 1 HGV Driver', 'Class 2 HGV Driver', 'Delivery Driver', 'Warehouse Operative', 'Picker & Packer', 'Forklift Driver', 'Warehouse Supervisor', 'Warehouse Manager', 'Transport Planner', 'Logistics Coordinator', 'Fleet Manager'] },
             {
                 name: 'Admin & HR',
                 page: 'admin-hr-recruitment.html',

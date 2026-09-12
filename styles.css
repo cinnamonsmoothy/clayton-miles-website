@@ -7976,6 +7976,82 @@ body {
     color: #ffffff;
 }
 
+.home-page.logistics-page .logistics-staffing .section-heading {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.home-page.logistics-page .logistics-staffing .section-heading > p {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.home-page.logistics-page .logistics-staffing-grid {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-page.logistics-page .logistics-staffing-grid article {
+    min-height: 310px;
+}
+
+.home-page.logistics-page .logistics-staffing-grid h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    letter-spacing: -0.035em;
+}
+
+.home-page.logistics-page .logistics-staffing-grid ul {
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+    list-style: none;
+}
+
+.home-page.logistics-page .logistics-staffing-grid li {
+    position: relative;
+    padding-left: 22px;
+    color: var(--hgv-muted);
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+.home-page.logistics-page .logistics-staffing-grid li::before {
+    content: '';
+    position: absolute;
+    top: 0.68em;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #111111;
+}
+
+.home-page.logistics-page .logistics-staffing-action {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-page.logistics-page .logistics-staffing-action .button {
+    min-width: 250px;
+}
+
+.home-page.logistics-page .logistics-staffing-action .logistics-staffing-cta {
+    min-height: 50px;
+    padding: 13px 46px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+}
+
 @media (max-width: 540px) {
     .home-page.logistics-page .hgv-benefit-list article,
     .home-page.logistics-page .hgv-benefit-list article:last-child {
@@ -7989,6 +8065,19 @@ body {
         width: 52px;
         height: 52px;
         padding: 14px;
+    }
+
+    .home-page.logistics-page .logistics-staffing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-page.logistics-page .logistics-staffing-grid article {
+        min-height: 0;
+    }
+
+    .home-page.logistics-page .logistics-staffing-action .button {
+        width: 100%;
+        min-width: 0;
     }
 }
 
