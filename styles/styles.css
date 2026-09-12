@@ -7627,14 +7627,6 @@ body {
     transform: none;
 }
 
-.home-page.art-gallery-page .art-proof-title {
-    margin: 0 0 18px;
-    color: var(--hgv-ink);
-    font-size: clamp(1.2rem, 1.8vw, 1.55rem);
-    line-height: 1.18;
-    letter-spacing: -0.04em;
-}
-
 .home-page.art-gallery-page .art-role-copy {
     min-height: 8.5em;
     margin: 0 0 22px;
