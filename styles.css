@@ -7330,6 +7330,17 @@ body {
         word-spacing: 0.025em;
     }
 
+    .home-page.logistics-page .logistics-hero-line-three {
+        min-height: 2.46em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-page.logistics-page .logistics-dynamic-role {
+        display: block;
+    }
+
     .home-page.hgv-page .home-section {
         padding-top: 104px;
         padding-bottom: 104px;
@@ -7452,6 +7463,10 @@ body {
     letter-spacing: -0.02em;
 }
 
+.home-page .employer-banner-mobile {
+    display: none;
+}
+
 .home-page .employer-scroll-banner strong {
     color: #ffffff;
     font-weight: 800;
@@ -7487,13 +7502,21 @@ body {
 @media (max-width: 700px) {
     .home-page .employer-scroll-banner {
         min-height: 82px;
-        padding: 12px 18px;
+        padding: 8px 18px;
     }
 
     .home-page .employer-scroll-banner p {
         max-width: 470px;
         font-size: 0.88rem;
         line-height: 1.45;
+    }
+
+    .home-page .employer-banner-desktop {
+        display: none;
+    }
+
+    .home-page .employer-banner-mobile {
+        display: inline;
     }
 
     .home-page .employer-scroll-banner a {

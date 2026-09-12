@@ -133,7 +133,7 @@ class ClaytonMilesHeader extends HTMLElement {
                     </div>
                 </nav>
                 <aside class="employer-scroll-banner" aria-hidden="true">
-                    <p>If you are <strong>an employer</strong> looking to make a temporary or permanent hire, please call <a href="tel:+447355701322">07355 701322</a> to speak directly with our friendly team.</p>
+                    <p><span class="employer-banner-desktop">If you are <strong>an employer</strong> looking to make a temporary or permanent hire, please call <a href="tel:+447355701322">07355 701322</a> to speak directly with our friendly team.</span><span class="employer-banner-mobile"><strong>Employers:</strong> call <a href="tel:+447355701322">07355 701322</a> to speak with our friendly team.</span></p>
                 </aside>
             </header>`;
 
@@ -144,10 +144,32 @@ class ClaytonMilesHeader extends HTMLElement {
             });
         };
 
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', resolveLocalIconUses, { once: true });
-        } else {
+        const resolveLocalPageLinks = () => {
+            const localHosts = new Set(['localhost', '127.0.0.1', '[::1]']);
+            const usesStaticFileRoutes = window.location.protocol === 'file:' || localHosts.has(window.location.hostname);
+            if (!usesStaticFileRoutes) return;
+
+            const localRoutes = new Map([
+                ['/', 'index.html'],
+                ['/#sectors', 'index.html#sectors'],
+                ['logistics-transport-recruitment', 'logistics-transport-recruitment.html']
+            ]);
+
+            document.querySelectorAll('a[href]').forEach(link => {
+                const localHref = localRoutes.get(link.getAttribute('href'));
+                if (localHref) link.setAttribute('href', localHref);
+            });
+        };
+
+        const prepareDocumentAssets = () => {
             resolveLocalIconUses();
+            resolveLocalPageLinks();
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', prepareDocumentAssets, { once: true });
+        } else {
+            prepareDocumentAssets();
         }
 
         const header = this.querySelector('.site-header');
