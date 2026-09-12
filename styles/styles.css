@@ -7630,6 +7630,20 @@ body {
     letter-spacing: -0.04em;
 }
 
+.home-page.art-gallery-page .art-role-copy {
+    min-height: 8.5em;
+    margin: 0 0 22px;
+    color: var(--hgv-muted);
+    font-size: 0.84rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+    .home-page.art-gallery-page .art-role-copy {
+        min-height: 0;
+    }
+}
+
 .home-page.logistics-page .logistics-process-section {
     background: #111111;
     color: #ffffff;

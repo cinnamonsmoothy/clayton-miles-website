@@ -44,7 +44,7 @@ class ClaytonMilesHeader extends HTMLElement {
                 roles: ['Administrator', 'Administrative Assistant', 'Office Administrator', 'Office Manager', 'Receptionist', 'Personal Assistant', 'Executive Assistant', 'Data Entry Clerk', 'Customer Service Administrator', 'Operations Administrator', 'Compliance Administrator', 'Contracts Administrator', 'Sales Administrator', 'HR Administrator', 'HR Coordinator', 'HR Advisor', 'HR Manager', 'HR Business Partner', 'Recruitment Coordinator', 'Talent Acquisition Specialist', 'Payroll Administrator', 'Learning & Development Coordinator', 'Medical Receptionist', 'GP Receptionist', 'Medical Administrator', 'Medical Secretary', 'Clinical Coder', 'Medical Summariser', 'Patient Services Advisor', 'Care Navigator', 'Referral Coordinator', 'Booking Coordinator', 'Ward Clerk', 'Health Records Clerk', 'Practice Manager']
             },
             { name: 'Automotive', roles: ['Vehicle Technician'] },
-            { name: 'Art & Galleries', page: 'art-gallery-recruitment', roles: ['Art Consultant', 'Art Advisor', 'Art Sales Consultant', 'Gallery Manager', 'Gallery Assistant', 'Artist Liaison', 'Exhibitions Coordinator', 'Art Registrar', 'Art Handler', 'Collections Manager', 'Auction Specialist', 'Cataloguer'] }
+            { name: 'Art & Galleries', page: 'art-gallery-recruitment', roles: ['Art Consultant', 'Gallery Assistant', 'Gallery Manager'] }
         ];
 
         const rolePages = {};
