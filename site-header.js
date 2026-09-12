@@ -113,7 +113,7 @@ class ClaytonMilesHeader extends HTMLElement {
         this.innerHTML = `${iconSprite}
             <header class="site-header">
                 <div class="header-inner">
-                    <a class="logo" href="index.html" aria-label="Clayton Miles Recruitment home">
+                    <a class="logo" href="/" aria-label="Clayton Miles Recruitment home">
                         <img src="images/logo.png" alt="Clayton Miles Recruitment">
                     </a>
                     <nav class="header-actions" aria-label="Primary navigation">

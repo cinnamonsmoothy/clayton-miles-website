@@ -8,7 +8,7 @@ class ClaytonMilesFooter extends HTMLElement {
                     <div class="home-container compact-footer-row">
                         <span>© 2026 Clayton Miles Recruitment</span>
                         <span>27 Old Gloucester Street, London, WC1N 3AX</span>
-                        <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="contact.html">Contact</a></nav>
+                        <nav aria-label="Footer navigation"><a href="/">Home</a><a href="contact.html">Contact</a></nav>
                     </div>
                 </footer>`;
             return;
@@ -19,12 +19,12 @@ class ClaytonMilesFooter extends HTMLElement {
             <footer class="site-footer shared-site-footer">
                 <div class="home-container footer-grid shared-footer-grid">
                     <div class="footer-brand">
-                        <a href="index.html" aria-label="Clayton Miles Recruitment home"><img src="images/logo.png" alt="Clayton Miles Recruitment" width="292" height="87"></a>
+                        <a href="/" aria-label="Clayton Miles Recruitment home"><img src="images/logo.png" alt="Clayton Miles Recruitment" width="292" height="87"></a>
                         <p>Specialist recruitment, thoughtfully matched.</p>
                     </div>
                     <nav class="footer-column" aria-label="Hire staff">
                         <h2>Hire staff</h2>
-                        <a href="index.html#sectors">All sectors</a>
+                        <a href="/#sectors">All sectors</a>
                         <a href="staffing-solutions.html?type=permanent">Permanent staffing</a>
                         <a href="staffing-solutions.html?type=temporary">Temporary staffing</a>
                     </nav>
