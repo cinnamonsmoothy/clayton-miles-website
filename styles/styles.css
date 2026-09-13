@@ -6290,6 +6290,10 @@ body {
         display: block;
     }
 
+    .home-page .mobile-nav .menu-level-sectors > .mega-menu-label {
+        display: none;
+    }
+
     .home-page .mobile-nav .header-menu-item.is-open > .mega-menu {
         max-height: none;
         overflow: visible;
