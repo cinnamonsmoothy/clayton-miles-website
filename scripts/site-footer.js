@@ -14,7 +14,6 @@ class ClaytonMilesFooter extends HTMLElement {
             return;
         }
 
-        const sectorHref = sector => `sector-recruitment.html?sector=${encodeURIComponent(sector)}`;
         this.innerHTML = `
             <footer class="site-footer shared-site-footer">
                 <div class="home-container footer-grid shared-footer-grid">
@@ -30,15 +29,15 @@ class ClaytonMilesFooter extends HTMLElement {
                     </nav>
                     <nav class="footer-column" aria-label="Sectors">
                         <h2>Sectors</h2>
-                        <a href="${sectorHref('Healthcare')}">Healthcare</a>
-                        <a href="${sectorHref('Children’s Residential Care')}">Children’s residential care</a>
-                        <a href="${sectorHref('Adult Social Care & Care Homes')}">Adult social care</a>
-                        <a href="${sectorHref('Hospitality')}">Hospitality</a>
-                        <a href="${sectorHref('Engineering')}">Engineering</a>
-                        <a href="logistics-transport-recruitment">Logistics & transport</a>
+                        <a href="healthcare-recruitment.html">Healthcare</a>
+                        <a href="childrens-residential-care-recruitment.html">Children’s residential care</a>
+                        <a href="social-care-recruitment.html">Adult social care</a>
+                        <a href="hospitality-recruitment.html">Hospitality</a>
+                        <a href="engineering-recruitment.html">Engineering</a>
+                        <a href="logistics-transport-recruitment.html">Logistics & transport</a>
                         <a href="admin-hr-recruitment.html">Admin & HR</a>
-                        <a href="${sectorHref('Automotive')}">Automotive</a>
-                        <a href="${sectorHref('Art & Galleries')}">Art & galleries</a>
+                        <a href="automotive-recruitment.html">Automotive</a>
+                        <a href="art-gallery-recruitment.html">Art & galleries</a>
                     </nav>
                     <nav class="footer-column" aria-label="Find work">
                         <h2>Find work</h2>
