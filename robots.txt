@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://claytonmiles.cc/sitemap.xml
+Sitemap: https://claytonmiles.co.uk/sitemap.xml

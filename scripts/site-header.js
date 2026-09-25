@@ -31,21 +31,21 @@ class ClaytonMilesHeader extends HTMLElement {
         const sectors = [
             {
                 name: 'Healthcare',
-                page: 'healthcare-recruitment.html',
+                page: 'healthcare-recruitment',
                 roles: ['Registered Nurse', 'Healthcare Assistant', 'Clinical Lead', 'Mental Health Nurse', 'Community Nurse', 'Practice Nurse', 'Nurse Practitioner', 'Theatre Nurse', 'Scrub Nurse', 'Recovery Nurse', 'ICU Nurse', 'A&E Nurse', 'Paediatric Nurse', 'Midwife', 'Occupational Therapist', 'Physiotherapist', 'Radiographer', 'Pharmacist', 'Pharmacy Technician', 'Clinical Services Manager']
             },
-            { name: 'Children’s Residential Care', page: 'childrens-residential-care-recruitment.html', roles: ['Children’s Home Manager', 'Deputy Home Manager', 'Residential Support Worker', 'Senior Residential Support Worker', 'Team Leader', 'Waking Night Support Worker', 'Children’s Social Worker', 'Responsible Individual', 'Therapeutic Support Worker'] },
-            { name: 'Adult Social Care & Care Homes', page: 'social-care-recruitment.html', roles: ['Care Home Manager', 'Deputy Care Home Manager', 'Registered Manager', 'Nursing Home Manager', 'Care Assistant', 'Senior Care Assistant', 'Support Worker', 'Care Coordinator', 'Domiciliary Care Manager', 'Live-in Carer', 'Complex Care Support Worker', 'Activities Coordinator'] },
-            { name: 'Hospitality', page: 'hospitality-recruitment.html', roles: ['Chef'] },
-            { name: 'Engineering', page: 'engineering-recruitment.html', roles: ['Maintenance Engineer'] },
-            { name: 'Logistics & Transport', page: 'logistics-transport-recruitment.html', roles: ['HGV Driver', 'Class 1 HGV Driver', 'Class 2 HGV Driver', 'Delivery Driver', 'Warehouse Operative', 'Picker & Packer', 'Forklift Driver', 'Warehouse Supervisor', 'Warehouse Manager', 'Transport Planner', 'Logistics Coordinator', 'Fleet Manager'] },
+            { name: 'Children’s Residential Care', page: 'childrens-residential-care-recruitment', roles: ['Children’s Home Manager', 'Deputy Home Manager', 'Residential Support Worker', 'Senior Residential Support Worker', 'Team Leader', 'Waking Night Support Worker', 'Children’s Social Worker', 'Responsible Individual', 'Therapeutic Support Worker'] },
+            { name: 'Adult Social Care & Care Homes', page: 'social-care-recruitment', roles: ['Care Home Manager', 'Deputy Care Home Manager', 'Registered Manager', 'Nursing Home Manager', 'Care Assistant', 'Senior Care Assistant', 'Support Worker', 'Care Coordinator', 'Domiciliary Care Manager', 'Live-in Carer', 'Complex Care Support Worker', 'Activities Coordinator'] },
+            { name: 'Hospitality', page: 'hospitality-recruitment', roles: ['Chef'] },
+            { name: 'Engineering', page: 'engineering-recruitment', roles: ['Maintenance Engineer'] },
+            { name: 'Logistics & Transport', page: 'logistics-transport-recruitment', roles: ['HGV Driver', 'Class 1 HGV Driver', 'Class 2 HGV Driver', 'Delivery Driver', 'Warehouse Operative', 'Picker & Packer', 'Forklift Driver', 'Warehouse Supervisor', 'Warehouse Manager', 'Transport Planner', 'Logistics Coordinator', 'Fleet Manager'] },
             {
                 name: 'Admin & HR',
                 page: 'admin-hr-recruitment.html',
                 roles: ['Administrator', 'Administrative Assistant', 'Office Administrator', 'Office Manager', 'Receptionist', 'Personal Assistant', 'Executive Assistant', 'Data Entry Clerk', 'Customer Service Administrator', 'Operations Administrator', 'Compliance Administrator', 'Contracts Administrator', 'Sales Administrator', 'HR Administrator', 'HR Coordinator', 'HR Advisor', 'HR Manager', 'HR Business Partner', 'Recruitment Coordinator', 'Talent Acquisition Specialist', 'Payroll Administrator', 'Learning & Development Coordinator', 'Medical Receptionist', 'GP Receptionist', 'Medical Administrator', 'Medical Secretary', 'Clinical Coder', 'Medical Summariser', 'Patient Services Advisor', 'Care Navigator', 'Referral Coordinator', 'Booking Coordinator', 'Ward Clerk', 'Health Records Clerk', 'Practice Manager']
             },
-            { name: 'Automotive', page: 'automotive-recruitment.html', roles: ['Vehicle Technician'] },
-            { name: 'Art & Galleries', page: 'art-gallery-recruitment.html', roles: ['Art Consultant', 'Gallery Assistant', 'Gallery Manager'] }
+            { name: 'Automotive', page: 'automotive-recruitment', roles: ['Vehicle Technician'] },
+            { name: 'Art & Galleries', page: 'art-gallery-recruitment', roles: ['Art Consultant', 'Gallery Assistant', 'Gallery Manager'] }
         ];
 
         const rolePages = {};
@@ -153,7 +153,13 @@ class ClaytonMilesHeader extends HTMLElement {
             const localRoutes = new Map([
                 ['/', 'index.html'],
                 ['/#sectors', 'index.html#sectors'],
+                ['healthcare-recruitment', 'healthcare-recruitment.html'],
+                ['childrens-residential-care-recruitment', 'childrens-residential-care-recruitment.html'],
+                ['social-care-recruitment', 'social-care-recruitment.html'],
+                ['hospitality-recruitment', 'hospitality-recruitment.html'],
+                ['engineering-recruitment', 'engineering-recruitment.html'],
                 ['logistics-transport-recruitment', 'logistics-transport-recruitment.html'],
+                ['automotive-recruitment', 'automotive-recruitment.html'],
                 ['art-gallery-recruitment', 'art-gallery-recruitment.html']
             ]);
 

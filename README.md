@@ -25,7 +25,7 @@ The production site uses clean routes such as `/logistics-transport-recruitment`
 
 ## Deployment
 
-The `main` branch deploys through GitHub Pages to `https://claytonmiles.cc/`.
+The `main` branch deploys through GitHub Pages to `https://claytonmiles.co.uk/`.
 
 Before pushing, check JavaScript syntax and whitespace:
 

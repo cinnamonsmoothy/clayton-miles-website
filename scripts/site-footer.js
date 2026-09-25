@@ -29,15 +29,15 @@ class ClaytonMilesFooter extends HTMLElement {
                     </nav>
                     <nav class="footer-column" aria-label="Sectors">
                         <h2>Sectors</h2>
-                        <a href="healthcare-recruitment.html">Healthcare</a>
-                        <a href="childrens-residential-care-recruitment.html">Children’s residential care</a>
-                        <a href="social-care-recruitment.html">Adult social care</a>
-                        <a href="hospitality-recruitment.html">Hospitality</a>
-                        <a href="engineering-recruitment.html">Engineering</a>
-                        <a href="logistics-transport-recruitment.html">Logistics & transport</a>
+                        <a href="healthcare-recruitment">Healthcare</a>
+                        <a href="childrens-residential-care-recruitment">Children’s residential care</a>
+                        <a href="social-care-recruitment">Adult social care</a>
+                        <a href="hospitality-recruitment">Hospitality</a>
+                        <a href="engineering-recruitment">Engineering</a>
+                        <a href="logistics-transport-recruitment">Logistics & transport</a>
                         <a href="admin-hr-recruitment.html">Admin & HR</a>
-                        <a href="automotive-recruitment.html">Automotive</a>
-                        <a href="art-gallery-recruitment.html">Art & galleries</a>
+                        <a href="automotive-recruitment">Automotive</a>
+                        <a href="art-gallery-recruitment">Art & galleries</a>
                     </nav>
                     <nav class="footer-column" aria-label="Find work">
                         <h2>Find work</h2>
